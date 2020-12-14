@@ -1,0 +1,990 @@
+<resources>
+    <string name="app_name">PayBiz</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Registration Page -->
+    <string name="register_below">Register Below</string>
+    <string name="ref_id">Referral Id</string>
+    <string name="apply_for">Apply For</string>
+    <string name="name">NAME</string>
+    <string name="email_id">Email ID</string>
+    <string name="adhar_no">Aadhar No.</string>
+    <string name="pan_number">Pan Number</string>
+    <string name="dob">DOB</string>
+    <string name="gst_number">GST Number</string>
+    <string name="address">Address</string>
+    <string name="street">Street/Flat/AreaName</string>
+    <string name="nearby">Near By Location</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="division">Division</string>
+    <string name="district">District</string>
+    <string name="pincode">Pincode</string>
+
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+
+    <string name="agent">Agent</string>
+    <string name="distributor">Distributor</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="acc_no">Account No.</string>
+    <string name="holder_name">Holder Name</string>
+    <string name="ifsc_code">IFSC CODE</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="file_uploading">File Uploading</string>
+    <string name="pan_file">pan_file</string>
+    <string name="photo">image_file</string>
+    <string name="adhar_file">Adhar File</string>
+    <string name="passbook_or_cheque">Passbook or Cheque</string>
+
+    <string name="generic_terms">All information fill by you are correct</string>
+    <!-- need to check -->
+    <string name="new_user_registration">New User Registration</string>
+    <string name="home_join">Home/Join User Registration</string>
+    <string name="welcome">Wel-Come</string>
+    <string name="fast_secure">Fast &amp; Secure</string>s
+    <string name="best_support_with_training">Best Support With Training (New-User)</string>
+    <string name="trainner_no">(+91)7222021001</string>
+    <string name="basic_upload_details">Basic Upload Detail</string>
+    <string name="join_with">Join with</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="generic_terms_1">I agree to all</string>
+    <string name="generic_terms_2">Terms of Use &amp; Posting Rules</string>
+
+    <string name="submit">Submit</string>
+
+    <!--- Login Activity -->
+    <string name="user_id">User Id</string>
+    <string name="password">Password</string>
+    <string name="caption">Caption</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="register">Register</string>
+
+    <!-- Forget Password -->
+    <string name="otp_msg">Please Fill Valid OTP</string>
+    <string name="otp">OTP</string>
+    <string name="search_user">Search User</string>
+    <string name="resend">Resend OTP</string>
+    <string name="verify">Verify</string>
+    <string name="confirm">Confirm</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!--Dashboard Activity-->
+    <string name="dashboard_activity">Dashboard</string>
+
+    <string name="new_offer">New Offer:-</string>
+    <string name="new_offer_str">We have revise Electricity Bill and LIC Premium commission from
+        0.90 to 1</string>
+    <string name="welcome_str">Welcome to The PayBizz</string>
+    <string name="digital_place">Digital Place</string>
+    <string name="paybizz_portal_str">PayBizz पोर्टल के जरिए आप बहुत सारे ऑनलाइन काम कर सकते हैं जैसे कि आधार
+        कार्ड से पैसे निकालने का काम ,मनी ट्रांसफर, बिजली बिल जमा ,आईटीआर, पैन कार्ड सर्विस, LIC प्रीमियम प्वाइंट,
+        फोन रिचार्ज, डीटीएच रिचार्ज  और भी बहुत कुछ ।</string>
+    <string name="become_biz_str">Become a PayBizz Agent &amp; earn Rs. 20,000 to Rs. 50,000
+        per month Join today with Digital platform.</string>
+    <string name="please_email_address">Please Fill E-Mail Address ?</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="your_name">Your Name</string>
+    <string name="join_now">Join Now >></string>
+    <string name="aeps">AePS</string>
+    <string name="money_transfer">Money-Transfer</string>
+    <string name="electricity_bill">Electricity Bill Pay</string>
+    <string name="pan_service">Pan Service</string>
+    <string name="lic">LIC</string>
+    <string name="why_choose_paybiz">Why choose PayBizz?</string>
+    <string name="save_money">Save Time and Money!</string>
+    <string name="low_cost">Low Cost</string>
+    <string name="get_your_recharge">Get your recharge to family and friends in minutes</string>
+    <string name="fast">Fast</string>
+    <string name="fast_str">As a Digital, Data and Technology build and run services which are
+        used by thousant of people every day.</string>
+    <string name="clean_ui">Clean UI &amp; Simple</string>
+    <string name="clean_ui_str">You get You can use these credits to take recharge.</string>
+    <string name="trust_pay">Trust pay</string>
+    <string name="trust_pay_str">100% Payment Protection. Easy Return Policy.</string>
+    <string name="secure_payments">100% Secure Payments</string>
+    <string name="secure_payments_str">Moving your card details to a much more
+        secured place.</string>
+    <string name="support">24X7 Support</string>
+    <string name="support_str">We\'re here to help. Have a query and need help ? Click here</string>
+    <string name="how_it_works">How It Works?</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="instant_start">Instant Start (Kyc)</string>
+    <string name="done">Done</string>
+    <string name="our_partners">Our Partners</string>
+    <string name="agent_say">Agent Say</string>
+    <string name="surendra">Surendra</string>
+    <string name="surendra_desc">We very pleased with all the work and expertise provided</string>
+    <string name="raja_ram">Raja Ram</string>
+    <string name="raja_ram_desc">These guys rock.are professional, knowledgeable, and fun to
+        work with. I recommend them to anyone looking for an engaged</string>
+    <string name="naresh_choudhary_desc">
+        Their team is knowledgeable, responsive and committed to supporting our initiatives, making
+        them invaluable partners&#8230;</string>
+    <string name="naresh_choudhary">Naresh Choudhary</string>
+    <string name="mukesh">Mukesh</string>
+    <string name="mukesh_desc">Everyone at paybizz that I\'ve met has been extremely helpful</string>
+    <string name="jitendra">Jitendra</string>
+    <string name="jitendra_desc">We have worked with Digital Marketing Works for over 10 years now
+        and have been very impressed </string>
+
+    <string name="team">Team</string>
+    <string name="team_number">57</string>
+    <string name="location">Location</string>
+    <string name="location_no">200</string>
+
+    <string name="subcribe">Subscribe</string>
+    <string name="subcribe_nl">Subscribe to Newsletter</string>
+    <string name="receive_new_ad">and receive new ads in inbox</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="quick_link">Quick Link</string>
+    <string name="about_us">About Us</string>
+    <string name="events">Events</string>
+    <string name="faq">FAQ\'s</string>
+    <string name="Blog">Blog</string>
+    <string name="Shop">Shop</string>
+
+    <string name="contact_info">Contact Info</string>
+    <string name="contact_no">7222021001\n7222021002</string>
+    <string name="support_email">Support@Paybizzindia.Com</string>
+    <string name="address_paybizz">Paota B2 Road Manji Ka Hatta, Paota, Jodhpur (Rajasthan)\nIndia-342001</string>
+    <string name="pincode_paybizz">India-342001</string>
+
+    <!-- Main Menus Options -->
+    <string name="home">Home</string>
+    <string name="services">Services</string>
+    <string name="about">About</string>
+    <string name="company_profile">Company Profile</string>
+    <string name="faq_menu">FAQ</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="join_new_user_reg">Join New User Registration</string>
+
+    <!-- Service Page -->
+    <string name="home_services">Home Services</string>
+    <string name="pan_center">PAN Centers</string>
+    <string name="pan_center_str">In addition to the TIN Facilitation Centres Cum PAN Centres,
+        applications for PAN (new and change request) are accepted TIN Faciliatation Center
+        from NSDL  UTI ITSL to apply for PAN,</string>
+    <string name="aeps_adhar_pay">(AePS)Aadhaar Pay</string>
+    <string name="aeps_adhar_pay_str">AePS allows a customer to use Aadhaar and access their bank
+        account to perform basic banking transactions like Cash Deposits &amp; Withdrawals made
+        easy financial institutions using \'NPCI\'</string>
+    <string name="lic_premium_pt">Lic Premium Point</string>
+    <string name="lic_premium_pt_str">Life Insurance Corporation of India Pay Premium Online
+        Pay Premium Online, Pension Calculator and Online Premium Calculator,
+        generate an instant illustration for Premium.</string>
+    <string name="money_transfer_">Money Transfer</string>
+    <string name="money_transfer_str">Send money Instantly with All Indian Bank\'s Online Money
+        Transfer Service. Simple &amp; secure way to transfer money to bank account
+        &amp; easily settle utility</string>
+    <string name="e_bill_pay_service">E-bill pay service</string>
+    <string name="e_bill_pay_service_str">Online bill payment is a secure electronic service that
+        allows customers to pay bills digital banking or payment service that
+        lets you pay bills over the Paybizz Portal</string>
+    <string name="itr_service">ITR Service</string>
+    <string name="itr_service_str">All India ITR - Your Personal Tax Expert. All India ITR is about
+        providing excellent services towards affordable online tax filing solutions for
+        individuals.</string>
+
+    <!-- About Us Page -->
+    <string name="home_about_us">Home/About Us</string>
+    <string name="about_us_descr">About the PayBizz is registered under the Rajasthan companies act
+        2013 and provide service in All types of e-Governance Sector under Govt. of Rajasthan
+        &amp; Doit&amp;C/RISL/CSC.</string>
+    <string name="more">More</string>
+    <string name="one_stop_str">One stop shop for all Digital</string>
+    <string name="financial_services">Financial services</string>
+    <string name="easy_onboarding_str">Easy onboarding on our platform</string>
+    <string name="business_opportunity">Business opportunity</string>
+    <string name="with_minimal_investments">with minimal investments.</string>
+    <string name="high_earning_potential">High earning potential</string>
+    <string name="user_friendly">User Friendly</string>
+    <string name="secure_reliable_str">Secure &amp; Reliable technology platform</string>
+
+    <!-- Profile Page -->
+    <string name="add_details">Add Details</string>
+
+    <!-- Contact US -->
+    <string name="send_msg_us">Send Message Us</string>
+    <string name="sub">Subject</string>
+    <string name="msg">Message</string>
+    <string name="address_">Address :  </string>
+    <string name="email_">Email I\'d : </string>
+    <string name="phone_">Phone :        </string>
+    <!-- Constants -->
+    <string name="rajs">Rajasthan</string>
+    <string name="terms_and_condtions">Terms &amp; Conditions</string>
+    <string name="guide">Guide</string>
+
+    <!-- Footer -->
+    <string name="footer_generic_string">Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+        ratione voluptatem sequi nesciunt consectetur, adipisci velit.</string>
+
+    <!-- App Url -->
+    <string name="app_share_url">https://play.google.com/store/apps/details?id=
+        com.drk.pay_bizz&amp;hl=en</string>
+
+    <!-- Splash Activity -->
+    <string name="splash_activity_access_fine_location">GPS permission allows us to access location data.
+                            Please allow in App Settings for additional functionality.</string>
+    <string name="splash_activity_permission_denied">Permission Denied.</string>
+
+    <!-- FAQ -->
+    <string name="faq1">1. What are the services available under AePS/Micro ATM?</string>
+    <string name="faqa1">.Balance Enquiry \n.Cash Withdrawal</string>
+    <string name="faq2">2. What are the benefits of AePS/Micro ATM</string>
+    <string name="faqa2">AePS/Micro ATM System is easy to use, safe and secure payment platform to
+        avail benefits by using Debit, ATM cards and Biometric devices.</string>
+    <string name="faq3">3. Which devices supports for AePS/Micro ATM?</string>
+    <string name="faqa3">For AePS major biometric devices are supported and for Micro ATM only
+        D180 device which are provided by EasyPay</string>
+    <string name="faq4">4. Amount are deducted from customer bank account but not showing in my
+        wallet</string>
+    <string name="faqa4">Such Cases are very rare however in case such case happen, debited amount
+        will be reversed to customer account as per NPCI guidelines</string>
+    <string name="faq5">5. How to treat fail/Unknown Transactions</string>
+    <string name="faqa5">Cash withdrawal - in case of cash-withdrawal if amount got debited
+        from customers account and is not credited in Agents wallet kindly treat this as FAIL and
+        do not handover the amount to customer. Customers Bank will settle the amount back in his
+        account. Kindly ask customer to check the same from his bank.</string>
+    <string name="faq6">6.How much I can earn?</string>
+    <string name="faqa6">Agent can earn up to Rs. 10 on each withdrawal. Please visit company
+        website for more details.</string>
+    <string name="faq7">7.What is IMPS?</string>
+    <string name="faqa7">IMPS stands for Immediate Payment Service in Indian banking system
+        terminologies. It is a money transfer mechanism made available by the apex bank of the
+        country, the Reserve Bank of India and the National Payments Corporation of India (NPCI).
+        It transfers funds instantly and is a great banking platform in case of emergencies.\n
+        The transaction charges of this platform are also very nominal and the transfer limit is
+        also considerable, approximately Rupees 2 lakhs per day. Moreover, IMPS is available on
+        mobile too which makes it super-convenient.
+    </string>
+    <string name="faq8">8.What is NEFT?</string>
+    <string name="faqa8">NEFT is a nation-wide payment system that allows transfer of funds from
+        one bank account to another. Individuals, firms and corporates can transfer the money from
+        one bank branch to any other bank account held by individual, firm or corporate in the
+        country.</string>
+    <string name="faq9">9.NEFT transactions on 24X7 basis</string>
+    <string name="faqa9">This will allow the bank customers to transfer the money all around the
+        clock. Earlier, NEFT payment system operated for customers from 8:00AM to 7:00 PM on all
+        working days except on 2nd and 4th Saturday as banks remain close on that day.</string>
+    <string name="faq10">10.IMPS transaction limit</string>
+    <string name="faqa10">Generally, the transaction limit for IMPS transfer is set to be Rs.2 lakh.
+        However, banks may define their own upper limit for an IMPS transaction. Check with your
+        bank and confirm the limit before you initiate a transaction.</string>
+    <string name="faq11">11. NEFT transaction limit</string>
+    <string name="faqa11">With NEFT transfers, the biggest advantage is that there is no cap on the
+        minimum and the maximum amount that you transfer. The minimum amount transferred can be as
+        low as Rs.l while for other fund transfer option like RTGS, there is a minimum limit of
+        Rs.2 Lakh.\n
+    There is no maximum amount assigned by the Reserve Bank of India (RBI) for NEFT Transactions.
+    However, a limit may be specified by the bank that you hold your account with. For instance,
+    HDFC Bank NEFT Transfer Limit is Rs.25 Lakh per day per customer ID via online NEFT Transfer.
+    </string>
+    <string name="tm_cond">Terms and Conditions</string>
+    <string name="tm_cond_str">These terms and conditions for appointment as BC Agent of Partner
+    (\"Terms and Conditions\") shall apply to and govern the commercial arrangement between Partner
+    and the BC Agent. These Terms and Conditions and any attachments hereto represent the entire
+    agreement between Partner and the BC Agent and no changes to the same are binding unless they
+    are in writing and signed by Partner\'s authorized representative.
+    \n\n<b>Background</b>
+    \n\t\t\t\tPursuant to Partner (\"Partner\") being appointed as the Business Correspondent (
+        \"BC\") of YES Bank Limited (\"the Bank\"), Partner proposes to appoint as Agents (BC Agents) to carry out the
+    various Banking and Financial Services of the Bank (BC Services), more particularly described
+    in the scope of work for BCAgents as Business Correspondent Agent (BC Agent) of YES Bank herein.
+    The Retailer hereby applies and agrees to be appointed as the BCAgent/s of YES BANK through
+    Partner as BC for the purposes herein above mentioned.
+    \n<b>The Retailer hereby agrees and undertakes the following:</b>
+    \n\t\ta. To act as the BC Agent of YES BANK, through Partner as BC, upon the execution of this
+    Business Correspondent Agent Registration Form and abide by the "Terms and Conditions"
+    contained in this Business Correspondent Agent Registration Form.
+    \n\t\tb. The appointment of BC Agents of YES BANK through Partner as BC, is/will be in addition to
+    the appointment of the Retailer as Partner Franchisee. Therefore, the BC Services to be offered
+    by the BC Agents to the general public pursuant to this Business Correspondent Agent
+    Registration Form will be in addition to the list of Partner Services that the Retailer is
+    already offering to the general public as PartnerÄCå,-\" Retailer / Franchisee.
+    \n\t\tc. The \"Terms and Conditions\" herein shall be applicable only for the said appointment of the
+    Retailer as BC Agents.
+
+    \n\n<b>The Retailer on being appointed as BC Agents hereby agrees and undertakes to abide by the
+    Terms and Conditions mentioned herein:</b>
+    \n\t\t1. <b>Offering of bc services</b>
+    \n\t\t\t\t a. All Services shall be provided solely through Partner\'s portal or are recorded
+    therein and no offline transactions are permitted.
+    \n\t\t\t\t b. Under no circumstances, fake/false receipts should be issued by the BC Agents for
+    the willful fraud transaction done by the BC Agents which is not transacted through Partner
+    Software/portal. However, if any BC Agents is found and/or discovered doing any such
+    malicious/wrong/willful/fraudulent acts and/or offline transactions, it shall be liable and
+    charged for such civil/penal and criminal acts by and under but not limited to the Indian
+    Penal Code 1860 and Criminal Procedure Code 1973.
+    \n\t\t\t\t c. The BC Agents hereby agrees that the offering of BC Services by the BC Agents to the
+    general public shall be at the sole discretion of Partner and Partner reserves the right to
+    offer/continue to offer and/or discontinue offering the BC Services through the BC Agents,
+    at any time for any reason(s) as may be deemed fit by Partner, from time to time. However,
+    Partner will provide prior intimation to the BC Agents of any such act.
+    \n\t\t2. <b>Use of bc agents\'s premises for bc services</b>
+    \n\t\t\t\t In addition to Partner services, the BC Agents shall for the BC Services, undertake to
+    use its premises solely for the Bank and confirms that BC Agent\'s permises are neither being
+    currently used and nor will be simultaneously used in future for any BC services and/or similar
+    Product offerings of any other Banks.
+    \n\t\t3. <b>Working limit</b>
+    \n\t\t\t\t The BC Agents shall keep and undertakes to maintain adequate balance as the working
+    limit that the BC Agent maintains with Partner, in advance, at all times in order to ensure
+    timely settlement of transactions and to ensure seamless service to the general public.
+    \n\t\t4. <b>Schedule of charges</b>
+    \n\t\t\t\tPartner will provide \'Bank\'s Approved Schedule of Charges\' containing details of fair
+    and reasonable charges/fees, which can be collected from the BC customer for delivery of BC
+    Services through the BC model. The BC Agent hereby agrees and undertakes not to charge the
+    customer any additional amount whatsoever, in any manner whatsoever, subject only to what
+    is provided for in the \'Bank\'s Approved Schedule of Charges, provided by Partner, for
+    offering the BC Services to the general public.
+    \n\t\t5. <b>Penalties for overcharging</b>
+    \n\t\t\t\ta. A very stringent action will be taken by Partner against the Partner BC Agent upon
+        receipt of a written complaint or upon receipt of investigation/mystery shopping report to
+        the effect that the said Partner BC Agent has/had charged the customer over and above the
+        stipulated \"Bank\'s Approved Schedule of Charges\" for any of the BC Services from the
+        customer.
+    \n\t\t\t\tb. Such action will include but not limited to, issuance of a show cause notice and
+        levying penalty of Rs.500/- (Rupees Five Hundred only) at the first instance.
+    \n\t\t\t\tc. If upon receipt of another complaint / investigation/mystery shopping report on
+        the same issue and subject matter, Partner shall apart from levying penalty, shall take
+        appropriate action against the said BC ÄCå,-\" Agent. The proposed action/s shall include
+        but not limited to suspension of the BC Service Activated for the Partner BC Agent.
+    \n\t\t6.<b>Statutory obligations of the bc agents</b>
+    \n\t\t\t\ta. The BC Agents undertakes to prominently display the BC Services related statutory
+        display material in its premises as intimated to the BC Agents by Partner from time to
+        time.
+    \n\t\t\t\tb. The BC Agent undertakes to educate/handle the Queries of the general public/customers
+        adequately on the BC Services including features and applicable charges of the Bank thereof,
+        so as to ensure obviation of misrepresentation and product wrong selling.
+    \n\t\t\t\tc. In addition to creating awareness about BC Services, the BC Agent shall take pro-active
+        steps to educate customer on aspects like interest rate, bank charges (as applicable),
+        terms and conditions of each product/service offered and grievance redressal mechanism.
+    \n\t\t\t\td. The BC Agent undertakes to keep the Customer Registration and KYC related documents in
+        its safe custody and will do further processing as per the instruction(s) of Partner
+        provided under guidance of Bank, issued from time to time. Any loss/damage/default, failure,
+        misfeasance, bad faith, disregard of its duties and obligations hereunder, service, act or
+        omission shall be the obligation and liability of the BC Agent.
+    \n\t\t\t\te. The BC Agent also undertakes to be liable and responsible for safekeeping and return in
+        good condition and order all of the Partner and/or Bank\'s property in whatsoever nature,
+        which may be in its use, custody or charge.
+    \n\t\t\t\tf. The BC Agent undertakes not to publish any article or statement, deliver any lecture or
+        broadcast or make any communication of whatsoever nature to the press, including magazine
+        publication relating to Partner and/or any of the Bank\'s products/Services or to any matter
+        with which Partner/Bank may be concerned, unless the BC Agent have previously applied to
+        and obtained the written permission from Partner/Bank.
+    \n\t\t\t\tg. Partner/the Bank/Reserve Bank of India (RBI) may inspect/audit the BC Agent as per their
+        respective requirements from time to time. The BC Agents hereby agrees and confirms to use
+        its reasonable endeavors and extend full and complete co-operation for and during such
+        inspection and/or audit and keep Partner duly informed and appraised of such inspections
+        and/or audits.
+    \n\t\t\t\th. The BC Agent undertakes to abide by and comply with all the guidelines, rules and
+        regulations for offering the BC Services of the Bank as applicable and intimated by Partner
+        from time to time.
+    \n\t\t7.<b>Confidentiality</b>
+    \n\t\t\t\ta. The BC Agent undertakes to always keep confidential and not to disclose, divulge or
+        make public, any of the Partner\'s/Bank\'s technical or other important information which
+        might come into my/ our possession during the continuance of my/ our assignment with
+        Partner as the BC Agent of the Bank, during or after the termination of my engagement with
+        Partner for the BC Services of the Bank.
+    \n\t\t\t\tb. The BC Agent undertakes to always keep the data and information of the general
+        public/customer generated due to the offering of the BC Services by the BC Agents,
+        completely confidential and that under no circumstances the same would be shared with any
+        other entity, save and except Partner/ Bank, without explicit prior written approval of
+        Partner/Bank.
+    \n\t\t\t\tc. The BC Agent undertakes to maintain utmost secrecy in respect of commercial offer,
+        Product design documents, technology, Software packages, license, Company\'s polices,
+        Company\'s patterns &amp; Trade Mark and/or any other Partner and/or Bank\'s
+    \n\t\t\t\tProducts/Services offered from time to time by Partner and any such confidential
+        information which shall be of significant importance to this B.C Service Arrangement
+        with the Retailer.
+    \n\t\t8. <b>Indemnity</b>
+    \n\t\t\t\t The BC Agent hereby undertakes to indemnify, defend and hold harmless Partner,
+        its affiliates, officers, directors, employees, agents, successors and assignees
+        (collectively the \"Indemnified Parties\") from and against all claims, damages (special or
+        consequential), losses and expenses, including court costs and reasonable fees and
+        expenses of attorneys, expert witnesses and other professionals, arising out of
+        or resulting from:
+    \n\t\t\t\ta. Any action by a third party against the Indemnified Parties that is based on any
+        negligent act, material omission or willful misconduct of the BC ÄCä,-\"Agents and
+        which results in:
+    \n\t\t\t\t\t\t\t\ti. Any bodily injury, sickness, disease or death.
+    \n\t\t\t\t\t\t\t\tii. Any injury or destruction to tangible or intangible property (including
+        computer programs and data) or any loss of use resulting thereof; or.
+    \n\t\t\t\t\t\t\t\tiii. Any violation of any statute, ordinance, or regulation;
+    \n\t\t\t\tb. Any loss, damage or prejudice suffered by any of the Indemnified Parties due to the
+        breach by the BC Agent of any applicable laws, by-laws, regulations and guidelines;
+    \n\t\t\t\tc. Any loss, damage or prejudice suffered by any of the Indemnified Parties due to the BC
+        Agents representing/providing wrong information to third parties on Partner\'s behalf
+        without prior, specific written authorization from Partner;
+    \n\t\t\t\td. Any loss, damage or prejudice suffered by reason of any claim or proceeding by any
+        third party against any of the Indemnified Parties due to the infringement of Partner
+        Intellectual Property by the BC Agent during the provision of the Services;
+    \n\t\t\t\te. Any loss, damage or prejudice suffered by any of the Indemnified Parties due to any
+        claim made by the BC Agent against Partner for non compliance with any labour laws; and
+    \n\t\t\t\tf. Any misrepresentation of any representation or warranty of the BC Agent under these
+        Terms and Conditions.
+    \n\t\t9.<b>Termination</b>
+    \n\t\t\t\ta. The appointment of the BC Agent under these Terms and Conditions are in addition to the
+        Retailer Form as BC Agent and this shall remain valid up-to Termination (referred to as
+        \"Term\", in the BC Agent Registration Form\"). However, Partner may exercise its right of
+        withdrawal by giving a notice in writing to the BC Agent, prior to withdrawal u and
+        Conditions contained.
+    \n\t\t\t\tb. The BC Agent also understanding of theTerms indiscipline. wrongful, incorrect, dishonest,
+        criminal fraudulent or negligent work, default, failure, misfeasance, bad faith, disregard
+        of its duties and obligations hereunder, service, act or omission of or by the BC Agent
+        and/or any theft, robbery, fraud or other wrongful act or omission by the BC Agents. The
+        BC Agent\'s engagement with Partner as the BC Agent of Bank will stand automatically
+        terminated.
+    \n\t\t10.<b>Jurisdiction</b>
+    \n\t\t\t\tIn the event of any dispute, this writing/Agreement shall be governed by and construed in
+        accordance with the laws of India and both parties hereby submit to the exclusive
+        jurisdiction of the courts of Mumbai.
+    \n\t\t11.<b>General</b>
+    \n\t\t\t\ta. The BC Agent undertakes not to accept any gift, commission or any sort of gratification
+        in cash or kind from any person party, firm or Company having and/or dealing with the Bank
+        and if the BC Agent is/are if at all offered any, the BCÄcä,-\" Agent(s) shall immediately
+        report the same to Bank and/ or Partner and Bank and/ or Partner then shall do the needful
+        as deemed fit and proper.
+    \n\t\t\t\tb. The BC Agent undertakes to extend full and complete co-operation to Partner and/or the
+        Bank in all and/or any case(s) relating to general public/customer grievance redressal
+        insofar as the BC Services offered by the BC Agent.
+    \n\t\t\t\tc. The BC Agents also agrees and confirms that the BC Agent is fully aware and has
+        understood about the BC Services and the Terms and Conditions contained herein.
+
+    \n<b>Scope of work for bc agents of yes bank through partner</b>
+    \n<b>Objective</b>
+    \n\t\tTo provide BC Services as the BC Agent of YES BANK through Partner as envisaged by As per
+        the RBI guidelines, the BC Services as specified below mptn, time
+        may be directed by Bank from time to time as per the
+    \n<b>Scope of work</b>
+    \n\t\tThe scope of services to be performed by the BC Agent can be modified in confirmation with
+        RBI Regulations, from time to time by the Bank, and the BC Agent shall perform its
+        obligations in accordance with such modified scope. The processes set out in this writing
+        may also be modified by the Bank and communicated through Partner, to the BC Agent from
+        time to time. Partner with the help of the Bank shall ensure prior adequate training and
+        awareness about each BC Service/s to the BC Agent on such BC Service(s) that Partner would
+        envisage and offer to the general public through the BC Agent, from time to time. The BC
+        Agent shall abide by the specific Terms and Conditions, if any, as may be instructed /
+        intimated and/or brought to the notice of the BC Agent, in addition to and/or other than
+        those contained herein, from time to time, with regards to any of the BC Sub-Services.
+    \n<b>Scope of service</b>
+    \n\t\tPartner as the BC of YES BANK will offer Banks Domestic Remittance Services to the general
+        public through the BC Agent. The Remittance Service will facilitate any common man to remit
+        money to his/her family, friends and/or business associates through the BC Agent. Partner
+        will provide/make available the necessary software registration to the BC Agent. Partner
+        will also adequately train the BC Agent in using the software registration for the purposes
+        of offering the Remittance Services. The broad scope of activities may include but shall
+        not be limited to the following:
+    \n\t\t\t\t1. One time registration of customer for origination of remittance services from the BC
+        Agent.
+    \n\t\t\t\t2. Origination of remittance services from the appointed BC Agents outlet using the Partner
+        technology platform.
+    \n\t\t\t\t3. The BC Agent shall ensure that it shall have necessary cash with them for facilitating
+        remittance services/transactions and will be responsible for financial settlement between
+        itself and Partner.
+    \n\t\t\t\t4. The BC Agent shall be intimated by Partner on the Transaction limits, if any (e.g.
+        transaction velocity, account balance) in lines with the regulatory guidelines, from time
+        to time.
+    \n\t\t\t\t5. The BC Agent shall comply with all the rules and regulations and/or guidelines as may be
+        specified by Partner from time to time for the purposes of offering the Remittances
+        Service.
+    \n\t\t\t\t6. The BC Agent shall ensure hard copy of Forms including Sender Registration Form and/or
+        such other Documents and shall secure the same from the customers, as may be required by
+        Partner for offering the Remittances Service, from time to time.
+    \n\t\t\t\t7. The BC Agent shall also ensure that all hard copy of Forms including Customer executed
+        Form/s/Sender Registration Form and/or such other Documents, so secured by the BC Agent in
+        the normal course of offering the Saving/s Account/ Remittances Service in a month, duly
+        reach Partner, within two weeks (2 weeks) of the following month.
+    \n\t\t\t\t8. The BC Agent will also ensure that all queries or clarifications and/or status inquiries
+        of the Customers for the Remittances Services offered by the BC Sub-Agent are duly
+        addressed and that the BC Agent shall ensure adequate steps/measures for the said purpose.
+    \n\t\t\t\t9. The BC Agent shall ensure that he/she delivers the hard copy of the Receipt for the Cash
+        as may be received by the BC Agent from the Customer for any and all Remittance Services
+        offered by him.
+    \n\t\t\t\t1O. In the event where the BC Agent observes, discovers and/or has reasons to believe,
+        contrary to the bonafide claims of any Customer, during the normal course of offering the
+        said Remittance Services, the BC Agent shall notify/intimate Partner, immediately.
+    \n\t\t\t\t11. Easy Pay and/or Bank shall not be liable for any failure to perform any of its
+        obligations, if its performance is prevented, hindered or delayed by a Force Majeure event
+        (defined below) and in such case its obligations shall be suspended for so long as the
+        Force Majeure Event continues (provided that this shall not prevent the accrual of interest
+        on a principal amount which would have been payable but for this provision).
+    \n\t\t\t\tMajeure EventÄCä,-Äi means any event beyond the reasonable control of EasyPay and/or BANK,
+        including, without limitation, unavailability of any communication system, sabotage, fire,
+        flood, explosion, acts of God, civil commotion, strikes or industrial action of any kind
+        (including concerning the pickup agency or the correspondent banks), riots, insurrection,
+        war or acts of government, loss of instruments by the pickup agency/correspondent banks.
+    \n\t\t\t\t12. The rates mentioned in the offer are subject to change depending on market changes or
+        because of any unforeseen event.
+    \n\t\t\t\t13. Taxes will be applicable on the charges for each of the services listed above as per
+        the prevailing rates.
+    \n\t\t\t\t14. Our offer is subject to prevailing RBI guidelines from time to time.
+    \n\t\t\t\t15. Other Standard Terms &amp; Conditions of Prepaid Card apply.
+    \n\t\t\t\t16. Any development charges required for integration outside standard scope will be charged
+        extra at actuals.
+    \n\n<b>Declaration</b>
+    \n\t\t\t\tI hereby apply to become a BC Agent of YES BANK through Partner (Partner) for
+        facilitating/distributing/providing different product/services ("BC Services") facilitated/
+        provided/ introduced/distributed/ made available by the Bank/Partner. If appointed as
+        BC Agent, I agree and confirm to abide by the rules and
+        regulations of Partner/the Bank that may be in force from time to time. I hereby confirm
+        I am competent and capable of the work assigned to me by Partner. I declare that the above
+        information is true, correct and fair to the best of my knowledge and belief, and I further
+        undertake to submit all necessary document/s, paper/s, proof/s, information and agreement
+        as required by Partner now or from time to time. I further declare that I have read all the
+        terms and conditions attached with this form for appointment as BC Agent and I am ready to
+        act as per such terms and conditions and all other terms and conditions informed to me by
+        Partner/Bank from time to time. I shall be liable/responsible for any breach of any of the
+        terms/conditions mentioned by Partner. I shall be solely exclusively and absolutely
+        liable/responsible for my act/s/omission/s which shall be harmful (cost/consequence) to
+        Partner/its Affiliates. I also authorize Partner to withhold any brokerage / commission /
+        fees / charges / deposit due to me, if any, till submission of the said documentation,
+        papers, information, proofs and agreement to the satisfaction of Partner.
+    \n\t\tIn case I have opened or will open account with YES BANK for personal use, I will not
+        misuse the account with YES Bank or any other Bank to migrate the Remittance transactions
+        clandestinely. I understand that this will be breach and violation of Agency responsibility
+        vested on me and if found guilty, I authorize YES Bank and our BC partner to deduct my load
+        balance available with them or my balance in the Bank account of any Bank and the balances
+        in wallet with the BC partner to recover the revenue loss. I undertake to submit my bank
+        account statements to YES Bank on request for the period requested. I also undertake that
+        I will not engage with any other Bank as an Agent of the other Bank or any Prepaid Card
+        issuer to facilitate/divert transactions of remittance while in engagement with YES Bank
+        unless I have taken an NOC from YES Bank for having surrendered the Agency of BC engagement
+        with YES Bank.
+    \n\t\t\t\tI have read and fully understood and abide by the contents of this Registration Form
+        herein.
+    </string>
+
+    <!-- Account Ledger -->
+    <string name="acc_led">Account Ledger</string>
+    <string name="today_trans">Today\'s Transaction</string>
+    <string name="filter">Filters</string>
+    <string name="no_transaction">No transaction history found!</string>
+    <string name="clear">Clear</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="all">ALL</string>
+    <string name="apply">Apply</string>
+
+    <!-- Aeps Balance inquiry-->
+    <string name="enter_mobile">Enter Mobile</string>
+    <string name="aeps_balance_inquiry">AePS Balance Inquiry</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="enter_aadhar">Enter Aadhar</string>
+    <string name="accept_tc">I accept Terms &amp; Conditions</string>
+    <string name="proceed">Proceed</string>
+
+    <!-- Aeps Cash Withdrawal -->
+    <string name="enter_amt">Enter Amount</string>
+    <string name="aeps_cash_w_d">AePS Cash Withdrawal</string>
+    <string name="total_trans">Total Tranx.</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="total">Total Aeps Withdrawal</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="product_today_earning">product Today earning</string>
+    <string name="withdrawal_amt">Withdrawal Amount</string>
+    <string name="get_Comm">get-Comm.</string>
+    <string name="recent_trans">Recent Transactions</string>
+    <string name="show">Show</string>
+    <string name="entries">Entries</string>
+    <string name="order_id">Order-ID</string>
+    <string name="date">Date</string>
+    <string name="search">Search:</string>
+    <string name="status">Status</string>
+    <string name="action">Action</string>
+    <string name="details">Detail</string>
+    <string name="receipt">Receipt</string>
+
+    <!-- Login Dashboard -->
+    <string name="main">MAIN</string>
+    <string name="e_pay">E-pay</string>
+    <string name="pay_lic">Pay-LiC</string>
+    <string name="itr_return">ITR-Return</string>
+    <string name="money_html">Money.html</string>
+    <string name="guidelines">Guidelines</string>
+    <string name="training">Training</string>
+    <string name="video">Video</string>
+    <string name="commission_sheet">Commission sheet</string>
+    <string name="compliance">Compliance</string>
+    <string name="inbox">Inbox</string>
+    <string name="search_">Search</string>
+    <string name="wallet">Wallet</string>
+    <string name="since_last_month">Since last month</string>
+    <string name="upper_arrow">\u2192</string>
+    <string name="tax_itr">TAX-ITR</string>
+    <string name="apply_tax">APPLY TAX</string>
+    <string name="return_">RETURN</string>
+    <string name="earning">Earning</string>
+    <string name="transfer">Transfer</string>
+    <string name="view_all">View All</string>
+    <string name="instant_transfer">INSTANT TRANSFER</string>
+    <string name="lic_premium">LIC PREMIUM</string>
+    <string name="pt">POINT</string>
+    <string name="apply_pan">Apply PAN</string>
+    <string name="news_and_correction">NEW &amp; CORRECTION</string>
+    <string name="fund_ctrl">Fund Control</string>
+    <string name="add_money">Add Money</string>
+    <string name="wallet_refill">Wallet Refill</string>
+    <string name="gift">Gift Coupon</string>
+    <string name="offer_coupon">Offer/Coupon</string>
+    <string name="send_money">Send Money</string>
+    <string name="bank_info">Bank info</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="report">Report</string>
+    <string name="revenue_chart_yr_2020">Revenue chart -Year 2020</string>
+    <string name="total_deposit">Total-Deposit</string>
+    <string name="opts">Options</string>
+    <string name="total_transfer">Total-Transfer </string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="service_name">Service Name</string>
+    <string name="fund_deposit">Fund Deposit</string>
+    <string name="aeps_trans_to_bnk">AePS Transfer to Bank</string>
+    <string name="service_icon">Service icon</string>
+    <string name="aeps_withdrawal">AePS Withdrawal</string>
+    <string name="completed">Completed</string>
+    <string name="in_prog">In Progress</string>
+    <string name="refer_ur_fr_">Refer your Friends and Eam</string>
+    <string name="referral_person">Referral Person</string>
+    <string name="rewards_pt">Rewards Point</string>
+    <string name="link_share">Link Share</string>
+    <string name="share_web_url">www.paybizzindia.com?0021</string>
+    <string name="enter_your_friend_email_id">Enter You Friends Mail-ld For Link Share</string>
+    <string name="enter_your_friend_mobile_no">Enter You Friends Mobile No. For Link Share with
+        text message</string>
+    <string name="_1000_rewards_pt">1000 Rewards Point = \u20A8 10</string>
+    <string name="more_details">More Details</string>
+    <string name="training_rewards_pt">Training Rewards Point</string>
+    <string name="link_send">Link Send</string>
+    <string name="tranx_amt">Tranx Amount</string>
+    <string name="_1000">Aeps 1000\u20A8</string>
+    <string name="itr_file">ITR-File</string>
+    <string name="support_tkt">Support Ticket</string>
+    <string name="today_payments_stmt_entry">Today Payments statement Entry</string>
+    <string name="please_add_adv_table">Please add advance table</string>
+    <string name="slkt_item_nt_working">Select item not working</string>
+    <string name="feature">Feature</string>
+    <string name="query">Query</string>
+    <string name="enhancement">Enhancement</string>
+    <string name="serial_no">S.No</string>
+    <string name="bug">Bug</string>
+    <string name="aeps_req_">Aeps Request</string>
+    <string name="mode">Mode</string>
+    <string name="cr">CR</string>
+    <string name="dr">DR</string>
+
+    <!-- Profile Edit Screen -->
+    <string name="upload_doc">Upload Document</string>
+    <string name="mob">Mobile</string>
+    <string name="ind">India</string>
+    <string name="agnt_name">Agent Name</string>
+    <string name="house_address">House Address:-</string>
+    <string name="agnt_per_dtls">Agent Personal Details</string>
+    <string name="mail">Mail</string>
+    <string name="full_name">Full Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="pan_no">PAN No.</string>
+    <string name="service_offered">Service Offered</string>
+    <string name="dmt">DMT</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="add_shop">Address Shop</string>
+    <string name="blood_grp">blood group</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="acc_hold_name">Accound Holder Name</string>
+    <string name="update_reason">Update Reason</string>
+    <string name="fund">FUND</string>
+    <string name="Read">read</string>
+    <string name="fund_add">Fund Add</string>
+    <string name="manually_process">Manually Process</string>
+    <string name="automatic_process">Automatic Process</string>
+    <string name="total_bill_pay_today">Total Bill Pay Today</string>
+    <string name="k_n_no">K.N Number:</string>
+    <string name="manual_mode_pay">Manual Mode Pay</string>
+    <string name="tl_pay_amt">Total Pay Amount</string>
+    <string name="board">Board</string>
+    <string name="pay_amt">Pay Amount</string>
+    <string name="k_no_name">K.No Name</string>
+    <string name="amt">Amount</string>
+    <string name="showing">Showing</string>
+    <string name="all_trans">All Transaction</string>
+    <string name="commission">Commission</string>
+
+    <!-- Menu -->
+    <string name="master">Master</string>
+    <string name="payu_gateway">PayU Gateway</string>
+    <string name="fund_req">Fund Request</string>
+    <string name="drk_gift_card">DRK Gift Card</string>
+    <string name="aeps_acc_req">AEPS Account Request</string>
+    <string name="uti_pan_coupon">UTI PAN Coupon</string>
+    <string name="money_transfer_new">Money Transfer (New)</string>
+    <string name="income_tax_return">Inocme Tax Return</string>
+    <string name="drk_gift_rep">DRK Gift Report</string>
+    <string name="electricity_bill_report">Electricity Bill Report</string>
+    <string name="lic_report">LIC Report</string>
+    <string name="pan_card_report">Pan Card Report</string>
+    <string name="income_tax_report">Income Tax Repor</string>
+    <string name="submit_tkt">Submit Ticket</string>
+
+    <!--First Time Login-->
+    <string name="welcome_ur_reg_msg">Welcome..Your registration has been successfully completed
+        please KYC in to continue For Active PayBizz Account</string>
+    <string name="please_take_a_few_mins">Please Take a few minutes to fill out this form (KYC)
+    </string>
+    <string name="uname">UserName</string>
+    <string name="profile">Profile</string>
+    <string name="bnk_acc">Bank Account</string>
+    <string name="upload">Upload</string>
+    <string name="please_ntr_sam_val">Please enter the same value again</string>
+
+    <!-- Notification -->
+    <string name="msgs">Messages</string>
+    <string name="mark_all_as_read">Mark All As Read</string>
+    <string name="aeps_update">Aeps Update</string>
+    <string name="offers">offer!!</string>
+    <string name="e_bill_pay">E-Bill Pay</string>
+    <string name="req_for_leave_app">Request for leave application</string>
+    <string name="your_pay_invoice_is_gen">Your payment invoice is generated.</string>
+    <string name="pan_apply">PAN Apply</string>
+    <string name="view_all_">View All > </string>
+
+    <!-- Compose Message -->
+    <string name="compose">Compose</string>
+    <string name="pay_bizz_id">Pay Bizz ID: </string>
+    <string name="write_query">Write your query here..</string>
+    <string name="name_">Name :</string>
+    <string name="mobile_no_">Mobile Number :</string>
+
+    <!-- Home Page -->
+    <string name="adar_with_dr">Aadhaar Withdrawal</string>
+    <string name="min_smt">Mini Statement</string>
+    <string name="easy_pay">Easy Pay</string>
+    <string name="balance_inq">Balance Inquiry</string>
+    <string name="micro_atm">Micro ATM</string>
+    <string name="transaction">Transactions</string>
+    <string name="mobikwik">Mobikwik</string>
+    <string name="account">Account</string>
+
+    <string name="complete_action_using">Complete Action Using</string>
+    <string name="truecaller">TrueCaller</string>
+    <string name="phone">Phone</string>
+    <string name="remember_my_choice">Remember my choice</string>
+    <string name="cancel">Cancel</string>
+    <string name="sender_login">Sender Login</string>
+    <string name="sender_mob_no">Sender mobile number*</string>
+    <string name="new_sender">New Sender</string>
+    <string name="click_here">Click Here</string>
+
+    <string name="e_services">E-SERVICES</string>
+    <string name="banking_trans">Banking transactions</string>
+    <string name="cnt_us_caps">CONTACT US</string>
+    <string name="customer_care">Customer Care</string>
+    <string name="email_us">Email Us</string>
+    <string name="portal_lk">Portal Link</string>
+    <string name="web_url">https://paybizzindia.com</string>
+    <string name="info">INFORMATION</string>
+    <string name="set">Setting</string>
+    <string name="help">Help</string>
+
+    <!-- Pay Bizz ATM -->
+    <string name="pay_bizz_atm">PAY BiZZ ATM</string>
+    <string name="withdraw">WITHDRAW</string>
+    <string name="withdraw_amt">WITHDRAW AMOUNT</string>
+    <string name="balance_info">BALANCE INFO</string>
+    <string name="chk_bal">CHECK BALANCE</string>
+
+    <!-- Scan Finger -->
+    <string name="scan_finger">Scan Finger</string>
+    <string name="aeps_bal_inq">AePS Balance Inquiry</string>
+    <string name="m_no_">Mobile No:</string>
+    <string name="aadhar_no">Aadhar No:</string>
+    <string name="bank_">Bank:</string>
+    <string name="please_chs_scan_dv">Please choose scanner device</string>
+    <string name="mantra">MANTRA</string>
+    <string name="unable_to_cap_finger">Unable to capture Fingerprint</string>
+    <string name="ok">OK</string>
+    <string name="select_fingerprint_device">Select Fingerprint Device</string>
+    <string name="mantra_fd">Mantra Fingerprint Device</string>
+    <string name="morpho_fd">Morpho Fingerprint Device</string>
+    <string name="tatvik_fd">Tatvik Fingerprint Device</string>
+    <string name="startek_fd">Startek Fingerprint Device</string>
+    <string name="default_fd_msg">Default fingerprint scanner device has been saved.</string>
+    <string name="save">SAVE</string>
+
+    <!-- Setting -->
+    <string name="setng">Setting</string>
+    <string name="eng">English</string>
+    <string name="hnd">Hindi</string>
+
+    <string name="transaction_history">Transaction History</string>
+    <string name="custom_dates">Custom dates</string>
+    <string name="paid_for_validate_beneficiary">Paid for validate beneficiary</string>
+    <string name="Rs">\u20B9</string>
+    <string name="rs">\u20A8</string>
+    <string name="success">Success</string>
+    <string name="one_rupees">1.00</string>
+
+    <!-- Support Team -->
+    <string name="guide_support_no">6377718712</string>
+    <string name="aeps_support_no">7222021001</string>
+    <string name="pan_support_no">6377718706</string>
+    <string name="electricity_bill_support_no">9950712224</string>
+
+
+    <!--Pay Payment Gateway Report-->
+    <string name="export_table">Export Table</string>
+    <string name="pb_copy">Copy</string>
+    <string name="csv">CSV</string>
+    <string name="excel">Excel</string>
+    <string name="pdf">PDF</string>
+    <string name="print">Print</string>
+    <string name="tnx_date">Tnx Date</string>
+    <string name="transcation_no">Transcation Number</string>
+    <string name="tnx_no">Tnx No.</string>
+    <string name="no_data_ava_str">No data available in table</string>
+
+
+    <!-- Fund Req -->
+    <string name="fund_req_title">Your Account info for Add Money to Wallet</string>
+    <string name="bnk_name_icici_bnk">Bank Name :- ICICI Bank</string>
+    <string name="acc_name">ACCOUNT NAME :- </string>
+    <string name="drk_acc_name">JODHPUR DRK PRIVATE LIMITED</string>
+    <string name="ifsc_code_">IFSC Code :-</string>
+    <string name="drk_ifsc_code_">ICIC0000104</string>
+    <string name="acc_no_">Account No :-</string>
+    <string name="drk_agent_based_acc_no">DRKJDRK002565</string>
+    <string name="fund_req_desc">PayBizz पोर्टल पर लिमिट लेने के लिए दिये गये खाते में पेसे ट्रान्सफर करने के बाद
+        ऑटोमेटिक 10 से 15 मिनट में लिमिट मिल जाएगी ।</string>
+    <string name="cash">Cash</string>
+    <string name="transaction_no">Transaction No.</string>
+    <string name="fund_amt">Fund Amount</string>
+    <string name="send_fund_req">Send Fund Request</string>
+    <string name="req_date">Req. Date</string>
+    <string name="pay_mode">Pay Mode</string>
+    <string name="action_date">Action Date</string>
+
+    <!-- Drk Gift Card -->
+    <string name="gift_card_recent_tnx">Gift Card Recent Transactions</string>
+    <string name="card_amt">Card Amount</string>
+    <string name="req_for">Request For</string>
+    <string name="req_val">Request Value</string>
+    <string name="request_date">Request Date</string>
+    <string name="remark">Remark</string>
+
+    <!-- Aeps Account Request -->
+    <string name="trn_type">Trn Type</string>
+    <string name="date_time">Date Time</string>
+
+    <!-- UTI PAN Req Report -->
+    <string name="no_of_coupon">Number of Coupon</string>
+    <string name="action_date_time">Action Date&amp;Time</string>
+
+    <!-- LIC Service Req Report -->
+    <string name="consumer_name">Consumer Name</string>
+    <string name="policy_no">Policy Number</string>
+    <string name="drk_ref_no">DRK Ref. No.</string>
+
+    <!-- Electricity Bill Pay -->
+    <string name="k_no">K.No.</string>
+
+    <!-- Money Transfer New Req Report -->
+    <string name="bene_list">Beneficiaries List</string>
+    <string name="bene_validate">Bene Validate</string>
+    <string name="transfer_amt">Transfer Amount</string>
+
+    <!-- Aeps Service Req Report -->
+    <string name="type">TYPE</string>
+    <string name="util_code">UTILITY CODE</string>
+    <string name="serv_typ">SERVICE TYPE</string>
+    <string name="ref_id_">REF ID</string>
+    <string name="bene_aur_receiver">BENE/RECEIVER</string>
+    <string name="charges_aur_commission">CHAR./COMM.</string>
+    <string name="total_amt">TOTAL AMOUNT</string>
+
+    <!-- E Bill Report -->
+    <string name="agnt_code">Agent Code</string>
+
+    <!-- ITR report item -->
+    <string name="plan_name">Plan Name</string>
+    <string name="plan_amt">Plan Amount</string>
+    <string name="plan_commission">Plan Commission</string>
+
+    <!-- LIC Report Item -->
+    <string name="due_date">Due Date</string>
+    <string name="lic_ref_no">LIC Ref. No.</string>
+    <string name="date_from">Date From</string>
+    <string name="date_to">Date To</string>
+    <string name="select_status">-- Select Status --</string>
+    <string name="export">Export</string>
+
+    <!-- Pan Card Report Item -->
+    <string name="ref_no">Ref. No.</string>
+    <string name="id_proof">Identity Proof</string>
+    <string name="add_proof">Address Proof</string>
+    <string name="dob_proof">DOB Proof</string>
+    <string name="form_49_i">Form 49A(I)</string>
+    <string name="form_49_ii">Form 49A(II)</string>
+
+    <!-- All Transaction Report -->
+    <string name="opening_bal">Opening Balance</string>
+    <string name="dr_and_cr">Dr/Cr</string>
+    <string name="gross_commission">Gross Comm.</string>
+    <string name="tds">TDS</string>
+    <string name="net_comm">Net Comm.</string>
+    <string name="closing_bal">Closing Balance</string>
+    <string name="sub_date_time">Submit Date&amp;Time</string>
+
+    <!-- Dummy Value -->
+    <string name="pb_dummy_id">DRK000006</string>
+    <string name="trans_id_a">PII 6016340358421012380</string>
+    <string name="date_2">19 Sep, 11:36 AM</string>
+    <string name="date_1">02 Oct, 03:50 PM</string>
+    <string name="total_trans_d_val">122</string>
+    <string name="d_ad_no">85222222111</string>
+    <string name="d_withdrawal">5222</string>
+    <string name="d_prod_ttl_earning">12</string>
+    <string name="date_dmy">2020&#8211;01&#8211;20</string>
+    <string name="_2_min_ago">2 MIN AGO</string>
+    <string name="_5_min_ago">5 MIN AGO</string>
+    <string name="_12_min_ago">12 MIN AGO</string>
+    <string name="dummy_lic_msg">hii John, I have upload doc related to task.</string>
+    <string name="_30_min_ago">30 MIN AGO</string>
+    <string name="cust_care_d_name">Jalpa Joshi</string>
+    <string name="d_cust_care_msg">Please do as specify. Let me know if you have any
+        query.</string>
+    <string name="_1_days_ago">1 DAYS AGO</string>
+    <string name="cust_care_d_name_2">Sarah Smith</string>
+    <string name="d_cust_care_msg_2">Client Requirements</string>
+    <string name="_2_days_ago">2 DAYS AGO</string>
+    <string name="d_tck_1">#89754</string>
+    <string name="d_support_msg_1">Hi, can you please add new table for advan&#8230;</string>
+    <string name="d_support_arise_tkt_by_1">Created by John Deo</string>
+    <string name="d_tck_2">#57854</string>
+    <string name="d_support_msg_2">please check select item in advance form not work&#8230;</string>
+    <string name="d_support_arise_tkt_by_2">Created by Sarah Smith</string>
+
+    <string name="d_pay_biz_id">PAYBiZZ0001</string>
+    <string name="d_kn_value">KN99388833</string>
+
+</resources>

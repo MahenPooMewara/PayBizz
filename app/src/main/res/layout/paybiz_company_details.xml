@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PBGenericMPWC"
+    android:paddingTop="48dp"
+    android:paddingBottom="48dp"
+    android:background="@color/pay_bizz_footer_black">
+
+    <RelativeLayout
+        style="@style/PBFooterGenericView"
+        android:id="@+id/agent_rl">
+
+        <ImageView
+            android:id="@+id/agent_no_img"
+            style="@style/PBServiceCompDetailsImg"/>
+
+        <TextView
+            android:id="@+id/agent_no"
+            style="@style/PBServiceCompDetailsNo"
+            android:layout_toEndOf="@+id/agent_no_img"
+            android:layout_toRightOf="@+id/agent_no_img"
+            android:text="728374"/>
+
+        <TextView
+            style="@style/PBServiceCompDetailsTitle"
+            android:layout_toEndOf="@+id/agent_no_img"
+            android:layout_toRightOf="@+id/agent_no_img"
+            android:layout_below="@+id/agent_no"
+            android:text="@string/agent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/PBFooterGenericView"
+        android:layout_below="@+id/agent_rl"
+        android:id="@+id/distributor_rl">
+
+        <ImageView
+            android:id="@+id/distributor_img"
+            style="@style/PBServiceCompDetailsImg"/>
+
+        <TextView
+            android:id="@+id/distributor_no"
+            style="@style/PBServiceCompDetailsNo"
+            android:layout_toEndOf="@+id/distributor_img"
+            android:layout_toRightOf="@+id/distributor_img"
+            android:text="125"/>
+
+        <TextView
+            style="@style/PBServiceCompDetailsTitle"
+            android:layout_toEndOf="@+id/distributor_img"
+            android:layout_toRightOf="@+id/distributor_img"
+            android:layout_below="@+id/distributor_no"
+            android:text="@string/distributor"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/PBFooterGenericView"
+        android:layout_below="@+id/distributor_rl"
+        android:id="@+id/team_rl">
+
+        <ImageView
+            android:id="@+id/team_img"
+            style="@style/PBServiceCompDetailsImg"/>
+
+        <TextView
+            android:id="@+id/team_no"
+            style="@style/PBServiceCompDetailsNo"
+            android:layout_toEndOf="@+id/team_img"
+            android:layout_toRightOf="@+id/team_img"
+            android:text="@string/team_number"/>
+
+        <TextView
+            style="@style/PBServiceCompDetailsTitle"
+            android:layout_toEndOf="@+id/team_img"
+            android:layout_toRightOf="@+id/team_img"
+            android:layout_below="@+id/team_no"
+            android:text="@string/team"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/PBFooterGenericView"
+        android:layout_below="@+id/team_rl"
+        android:id="@+id/location_rl">
+
+        <ImageView
+            android:id="@+id/location_img"
+            style="@style/PBServiceCompDetailsImg"
+            android:src="@android:drawable/ic_dialog_map"/>
+
+        <TextView
+            android:id="@+id/location_no"
+            style="@style/PBServiceCompDetailsNo"
+            android:layout_toEndOf="@+id/location_img"
+            android:layout_toRightOf="@+id/location_img"
+            android:text="@string/location_no"/>
+
+        <TextView
+            style="@style/PBServiceCompDetailsTitle"
+            android:layout_toEndOf="@+id/location_img"
+            android:layout_toRightOf="@+id/location_img"
+            android:layout_below="@+id/location_no"
+            android:text="@string/location"/>
+    </RelativeLayout>
+
+</RelativeLayout>

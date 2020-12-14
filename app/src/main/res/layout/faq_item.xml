@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PBGenericMPWC"
+    app:cardElevation="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        style="@style/PBServiceRL"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:id="@+id/faq"
+            style="@style/PBFeatureTTV"
+            android:textColor="@color/pay_bizz_orange"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/faq_ans"
+            style="@style/PBFeatureTDTV"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_below="@+id/faq"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

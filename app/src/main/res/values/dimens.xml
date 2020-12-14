@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <integer name="two">2</integer>
+    <integer name="five">5</integer>
+    <integer name="ten">10</integer>
+    <integer name="five_hundred">500</integer>
+    <integer name="hundred">100</integer>
+    <integer name="thousand">1000</integer>
+    <integer name="two_thousand">2000</integer>
+    <integer name="three_thousand">3000</integer>
+    <integer name="ten_thousand">10000</integer>
+
+
+</resources>

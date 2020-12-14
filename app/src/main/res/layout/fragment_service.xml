@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        style="@style/PBGenericMPWC"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            style="@style/PBGenericMPWC"
+            android:background="@color/pay_bizz_orange">
+
+            <RelativeLayout
+                android:id="@+id/pay_biz_services"
+                style="@style/PBGenericMPWC"
+                android:layout_margin="8dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/service_item_rv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/company_details_rl"
+                style="@style/PBGenericMPWC"
+                android:layout_below="@+id/pay_biz_services">
+                <include
+                    layout="@layout/paybiz_company_details"
+                    style="@style/PBGenericMPWC"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/features_views_rl"
+                style="@style/PBGenericMPWC"
+                android:layout_below="@+id/company_details_rl">
+
+                <RelativeLayout
+                    android:id="@+id/clean_ui_text"
+                    style="@style/PBGenericMPWC">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL"
+                        android:background="@android:color/transparent">
+
+                        <TextView
+                            android:id="@+id/clean_ui_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/clean_ui" />
+
+                        <TextView
+                            android:id="@+id/clean_ui_tv_desc_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/clean_ui_tv"
+                            android:text="@string/clean_ui_str" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/get_your_recharge_rl"
+                    style="@style/PBGenericMPWC"
+                    android:layout_below="@+id/clean_ui_text">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL"
+                        android:background="@android:color/transparent">
+
+                        <TextView
+                            android:id="@+id/get_your_recharge_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/low_cost" />
+
+                        <TextView
+                            android:id="@+id/get_your_recharge_desc_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/get_your_recharge_tv"
+                            android:text="@string/get_your_recharge" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/support_rl"
+                    style="@style/PBGenericMPWC"
+                    android:layout_below="@+id/get_your_recharge_rl">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL"
+                        android:background="@android:color/transparent">
+
+                        <TextView
+                            android:id="@+id/support_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/support" />
+
+                        <TextView
+                            android:id="@+id/support_str_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/support_tv"
+                            android:text="@string/support_str" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        <include
+            layout="@layout/footer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/features_views_rl" />
+
+    </RelativeLayout>
+</ScrollView></androidx.constraintlayout.widget.ConstraintLayout>

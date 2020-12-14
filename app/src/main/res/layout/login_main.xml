@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--android:background="#f39c12" -->
+        <ScrollView style="@style/PBGenericMPWC" tools:ignore="MissingConstraints">
+
+                <RelativeLayout style="@style/PBGenericMPWC" android:layout_margin="16dp">
+
+                        <ImageView
+                            style="@style/PBLogo"
+                            android:id="@+id/app_log" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                        style="@style/PBOutlinedBox"
+                        android:hint="@string/user_id"
+                        app:boxStrokeWidth="1dp"
+                        app:boxCornerRadiusTopEnd="40dp"
+                        app:boxCornerRadiusBottomEnd="40dp"
+                        app:boxCornerRadiusBottomStart="40dp"
+                        app:boxCornerRadiusTopStart="40dp"
+                        android:layout_below="@+id/app_log"
+                        android:id="@+id/user_id_il">
+                            <com.google.android.material.textfield.TextInputEditText
+                                style="@style/PBEditBox"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:id="@+id/user_id">
+
+                </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/PBOutlinedBox"
+            android:hint="@string/password"
+            app:boxStrokeWidth="1dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            android:layout_below="@+id/user_id_il"
+            android:id="@+id/password_il">
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PBEditBox"
+                    android:inputType="textPassword"
+                    android:id="@+id/password_id">
+
+                </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/PBCaptionTitle"
+                    android:layout_below="@+id/password_il"
+                    android:id="@+id/caption"/>
+
+                <ImageView
+                    style="@style/PBCaptionRefreshIV"
+                    android:layout_below="@+id/password_il"
+                    android:layout_toRightOf="@+id/caption"
+                    android:id="@+id/caption_img"
+                    android:layout_toEndOf="@+id/caption"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/caption"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/caption"
+                    android:id="@+id/caption_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:id="@+id/caption_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/caption_il"
+                            android:layout_marginBottom="8dp"
+                            android:id="@+id/login_reg_ly"
+                            android:weightSum="9">
+                                <View style="@style/PB_Dummy_View" />
+
+                                <Button
+                                    style="@style/PB_Button_View"
+                                    android:text="@string/login"
+                                    android:layout_weight="3"
+                                    android:id="@+id/button_login"/>
+
+                                <View style="@style/PB_Dummy_View" />
+
+                                <Button
+                                    style="@style/PB_Button_View"
+                                    android:text="@string/register"
+                                    android:layout_weight="3"
+                                    android:id="@+id/button_register"/>
+                                <View style="@style/PB_Dummy_View" />
+                        </LinearLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forget_password"
+                    android:layout_below="@+id/login_reg_ly"
+                    android:padding="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/button_forget_password"/>
+
+                
+        </RelativeLayout>
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

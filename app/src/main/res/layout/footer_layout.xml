@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#153039">
+
+    <ScrollView
+        style="@style/PBGenericMPWC"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            style="@style/PBGenericMPWC"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/log_rl"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/app_log"
+                    style="@style/PBLogoFooter" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/footer_desc"
+                style="@style/PBFooterGenericViewTV"
+                android:layout_below="@+id/log_rl"
+                android:text="@string/footer_generic_string" />
+
+            <RelativeLayout
+                android:id="@+id/social_pages"
+                style="@style/PBFooterGenericView"
+                android:layout_below="@+id/footer_desc">
+
+                <RelativeLayout
+                    android:id="@+id/fb_rl"
+                    style="@style/PBLogoFooterIcon">
+
+                    <ImageView
+                        style="@style/PBFooterIconImg"
+                        android:src="@android:drawable/ic_menu_call" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tw_rl"
+                    style="@style/PBLogoFooterIconNxt"
+                    android:layout_toEndOf="@+id/fb_rl"
+                    android:layout_toRightOf="@+id/fb_rl">
+
+                    <ImageView
+                        style="@style/PBFooterIconImg"
+                        android:src="@android:drawable/ic_menu_call" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ln_rl"
+                    style="@style/PBLogoFooterIconNxt"
+                    android:layout_toEndOf="@+id/tw_rl"
+                    android:layout_toRightOf="@+id/tw_rl">
+
+                    <ImageView
+                        style="@style/PBFooterIconImg"
+                        android:src="@android:drawable/ic_menu_call" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gl_rl"
+                    style="@style/PBLogoFooterIconNxt"
+                    android:layout_toEndOf="@+id/ln_rl"
+                    android:layout_toRightOf="@+id/ln_rl">
+
+                    <ImageView
+                        style="@style/PBFooterIconImg"
+                        android:src="@android:drawable/ic_menu_call" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/quick_links"
+                style="@style/PBFooterTitleTV"
+                android:layout_below="@+id/social_pages"
+                android:text="@string/quick_link" />
+
+
+            <LinearLayout
+                android:id="@+id/about_us_ly"
+                style="@style/PBFooterGenericView"
+                android:layout_below="@+id/quick_links"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/about_us"
+                    style="@style/PBFooterGenericTitle"
+                    android:layout_weight="5"
+                    android:text="@string/about_us" />
+
+                <View style="@style/PB_Dummy_View" />
+
+                <TextView
+                    android:id="@+id/blog"
+                    style="@style/PBFooterGenericTitle"
+                    android:layout_weight="3"
+                    android:text="@string/Blog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/events_ly"
+                style="@style/PBFooterGenericView"
+                android:layout_below="@+id/about_us_ly"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/events"
+                    style="@style/PBFooterGenericTitle"
+                    android:layout_weight="5"
+                    android:text="@string/events" />
+
+                <View style="@style/PB_Dummy_View" />
+
+                <TextView
+                    android:id="@+id/shop"
+                    style="@style/PBFooterGenericTitle"
+                    android:layout_weight="3"
+                    android:text="@string/Shop" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/faq"
+                style="@style/PBFooterGenericTitleNxt"
+                android:layout_below="@+id/events_ly"
+                android:text="@string/faq" />
+
+            <TextView
+                android:id="@+id/contact_us"
+                style="@style/PBFooterTitleTV"
+                android:layout_below="@+id/faq"
+                android:text="@string/contact_us"/>
+
+            <RelativeLayout
+                style="@style/PBFooterGenericView"
+                android:layout_below="@+id/contact_us"
+                android:id="@+id/contact_no">
+
+                <ImageView
+                    android:id="@+id/contact_us_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_call"/>
+
+                <TextView
+                    style="@style/PBFooterGenericTitleNxt"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/contact_us_no"
+                    android:layout_toRightOf="@+id/contact_us_no"
+                    android:text="@string/contact_no"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/PBFooterGenericView"
+                android:layout_below="@+id/contact_no"
+                android:id="@+id/support_ly">
+
+                <ImageView
+                    android:id="@+id/support_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_dialog_email"/>
+
+                <TextView
+                    style="@style/PBFooterGenericTitleNxt"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/support_iv"
+                    android:layout_toRightOf="@+id/support_iv"
+                    android:text="@string/support"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/PBFooterGenericView"
+                android:layout_below="@+id/support_ly"
+                android:id="@+id/address_ly">
+
+                <ImageView
+                    android:id="@+id/address_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_dialog_map"/>
+
+                <TextView
+                    style="@style/PBFooterGenericTitleNxt"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/address_iv"
+                    android:layout_toRightOf="@+id/address_iv"
+                    android:text="@string/address_paybizz"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/dashboard_activity" />
+
+    </group>
+    <item android:title= "@string/master" >
+        <menu>
+            <item
+                android:id= "@+id/nav_payu_gateway"
+                android:title= "@string/payu_gateway" />
+            <item
+                android:id= "@+id/nav_fund_req"
+                android:title= "@string/fund_req" />
+            <item
+                android:id= "@+id/nav_drk_gift_card"
+                android:title= "@string/drk_gift_card" />
+            <item
+                android:id= "@+id/nav_aeps_acc_req"
+                android:title= "@string/aeps_acc_req" />
+
+        </menu>
+    </item>
+    <item android:title= "@string/services" >
+        <menu>
+            <item
+                android:id= "@+id/nav_uti_pan_coupon"
+                android:title= "@string/uti_pan_coupon" />
+            <item
+                android:id= "@+id/nav_pay_lic"
+                android:title= "@string/pay_lic" />
+            <item
+                android:id= "@+id/nav_electricity_bill"
+                android:title= "@string/electricity_bill" />
+            <item
+                android:id= "@+id/nav_money_transfer_new"
+                android:title= "@string/money_transfer_new" />
+            <item
+                android:id= "@+id/nav_aeps"
+                android:title= "@string/aeps" />
+            <item
+                android:id= "@+id/nav_income_tax_return"
+                android:title= "@string/income_tax_return" />
+        </menu>
+    </item>
+    <item android:title= "@string/report" >
+        <menu>
+            <item
+                android:id= "@+id/nav_drk_gift_rep"
+                android:title= "@string/drk_gift_rep" />
+            <item
+                android:id= "@+id/nav_money_transfer"
+                android:title= "@string/money_transfer_" />
+            <item
+                android:id= "@+id/nav_electricity_bill_report"
+                android:title= "@string/electricity_bill_report" />
+            <item
+                android:id= "@+id/nav_lic_report"
+                android:title= "@string/lic_report" />
+            <item
+                android:id= "@+id/nav_pan_card_report"
+                android:title= "@string/pan_card_report" />
+            <item
+                android:id= "@+id/nav_income_tax_report"
+                android:title= "@string/income_tax_report" />
+        </menu>
+    </item>
+    <item android:title= "@string/guidelines" >
+        <menu>
+            <item
+                android:id= "@+id/nav_training"
+                android:title= "@string/training" />
+            <item
+                android:id= "@+id/nav_video"
+                android:title= "@string/video" />
+            <item
+                android:id= "@+id/nav_commission_sheet"
+                android:title= "@string/commission_sheet" />
+        </menu>
+    </item>
+    <item android:title= "@string/support" >
+        <menu>
+            <item
+                android:id= "@+id/nav_submit_tkt"
+                android:title= "@string/submit_tkt" />
+        </menu>
+    </item>
+</menu>

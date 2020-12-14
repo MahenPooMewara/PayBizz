@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="24dp"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <ScrollView
+        style="@style/PBGenericMPWC"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            style="@style/PBGenericMPWC"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/pay_add_money"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/add_money_icon"
+                android:tint="@color/pay_bizz_green"
+                tools:ignore="ContentDescription,MissingConstraints,UseAppTint" />
+
+            <ImageView
+                android:id="@+id/payu_logo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/pay_add_money"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center_horizontal"
+                android:src="@drawable/payu_partner"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/payu_il"
+                style="@style/PBOutlinedBox"
+                android:layout_below="@+id/payu_logo"
+                android:layout_marginTop="16dp"
+                android:hint="@string/amt"
+                app:boxCornerRadiusBottomEnd="40dp"
+                app:boxCornerRadiusBottomStart="40dp"
+                app:boxCornerRadiusTopEnd="40dp"
+                app:boxCornerRadiusTopStart="40dp"
+                app:boxStrokeWidth="1dp"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amount"
+                    style="@style/PBEditBox"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    tools:ignore="MissingConstraints">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/wallet_log"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/payu_il"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/add_wallet"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/button_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallet_log"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@android:color/holo_red_dark"
+                android:foregroundGravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="12dp"
+                android:text="@string/add_money"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                tools:ignore="MissingConstraints" />
+
+            <include
+                layout="@layout/table_header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_Submit"
+                android:id="@+id/take_report_include"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_report_include"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/payu_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pay_bizz_footer_black"
+                    android:weightSum="125"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PBReportTableHorzTV"
+                        android:text="@string/serial_no"
+                        android:layout_weight="15"/>
+                    <View style="@style/PB_Dummy_View" />
+
+                    <TextView
+                        style="@style/PBReportTableHorzTV"
+                        android:text="@string/tnx_date"
+                        android:layout_weight="25"/>
+                    <View style="@style/PB_Dummy_View" />
+
+                    <TextView
+                        style="@style/PBReportTableHorzTV"
+                        android:text="@string/amt"
+                        android:layout_weight="24"/>
+                    <View style="@style/PB_Dummy_View" />
+
+                    <TextView
+                        style="@style/PBReportTableHorzTV"
+                        android:text="@string/mode"
+                        android:layout_weight="16"/>
+                    <View style="@style/PB_Dummy_View" />
+
+                    <TextView
+                        style="@style/PBReportTableHorzTV"
+                        android:text="@string/status"
+                        android:layout_weight="17"/>
+                    <View style="@style/PB_Dummy_View" />
+
+                    <TextView
+                        style="@style/PBReportTableHorzTV"
+                        android:text="@string/tnx_no"
+                        android:layout_weight="23"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/payu_gateway_recycler_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/payu_title"
+                    android:layout_toRightOf="@+id/payu_title"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

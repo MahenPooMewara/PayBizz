@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView style="@style/PBGenericMPWC" tools:ignore="MissingConstraints">
+
+                <RelativeLayout style="@style/PBGenericMPWC" android:layout_margin="16dp">
+
+                        <ImageView
+                            style="@style/PBLogo"
+                            android:id="@+id/app_log"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/ref_id"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/app_log"
+                            android:visibility="gone"
+                            android:id="@+id/ref_id_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="text"
+                                    android:clickable="false"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:editable="false"
+                                    android:enabled="false"
+                                    android:id="@+id/ref_id"
+                                    tools:ignore="Deprecated">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedDropBox"
+                            android:hint="@string/apply_for"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/ref_id_il"
+                            android:id="@+id/apply_for_l">
+
+                                <AutoCompleteTextView
+                                    style="@style/PBAutoCompleteText"
+                                    android:id="@+id/apply_for_id"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/name"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/apply_for_l"
+                    android:id="@+id/username_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="textCapCharacters|textPersonName"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:id="@+id/username">
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+            style="@style/PBOutlinedBox"
+            android:hint="@string/mobile_no"
+            app:boxStrokeWidth="1dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopStart="40dp"
+            android:layout_below="@+id/username_il"
+            android:id="@+id/mob_no_il">
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/PBEditBox"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:id="@+id/mob_no">
+
+                </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/email_id"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/mob_no_il"
+                    android:id="@+id/email_id_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/email_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/adhar_no"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/email_id_il"
+                            android:id="@+id/adhar_no_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="number"
+                                    android:maxLength="14"
+                                    android:id="@+id/adhar_no_id">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/pan_number"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/adhar_no_il"
+                            android:id="@+id/pan_number_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="10"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                                    android:id="@+id/pan_no_id">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/dob"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/pan_number_il"
+                            android:id="@+id/dob_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="date"
+                                    android:maxLength="10"
+                                    android:text="26-01-2010"
+                                    android:focusable="false"
+                                    android:id="@+id/dob_id">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/gst_number"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/dob_il"
+                            android:id="@+id/gst_number_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="text"
+                                    android:maxLength="15"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                                    android:id="@+id/gst_number_id">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/address"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/gst_number_il"
+                    android:id="@+id/address_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:id="@+id/address_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/street"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/address_il"
+                    android:id="@+id/street_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:id="@+id/street_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/nearby"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/street_il"
+                    android:id="@+id/nearby_il">
+                         <com.google.android.material.textfield.TextInputEditText
+                             style="@style/PBEditBox"
+                                android:id="@+id/nearby_id">
+
+                </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/city"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/nearby_il"
+                    android:id="@+id/city_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:id="@+id/city_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedDropBox"
+                            android:hint="@string/state"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/city_il"
+                            android:id="@+id/state_il">
+
+                                <AutoCompleteTextView
+                                    style="@style/PBAutoCompleteText"
+                                    android:id="@+id/state_id"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--- GOA And JK -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedDropBox"
+                            android:hint="@string/division"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/state_il"
+                            android:visibility="gone"
+                            android:id="@+id/division_il">
+
+                                <AutoCompleteTextView
+                                    style="@style/PBAutoCompleteText"
+                                    android:id="@+id/division_id"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedDropBox"
+                    android:hint="@string/district"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/division_il"
+                    android:id="@+id/district_l">
+
+                <AutoCompleteTextView
+                    style="@style/PBAutoCompleteText"
+                    android:id="@+id/district"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/pincode"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/district_l"
+                    android:id="@+id/pincode_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:id="@+id/pincode_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/PBTitleText"
+                        android:layout_below="@+id/pincode_il"
+                        android:id="@+id/bank_details_tv"
+                        android:text="@string/bank_details"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/acc_no"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/bank_details_tv"
+                    android:id="@+id/acc_no_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="number"
+                            android:id="@+id/acc_no_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/holder_name"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/acc_no_il"
+                    android:id="@+id/holder_name_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:id="@+id/holder_name_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/bank_name"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/holder_name_il"
+                    android:id="@+id/bank_name_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:id="@+id/bank_name_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/ifsc_code"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/bank_name_il"
+                            android:id="@+id/ifsc_code_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="textCapWords"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                                    android:id="@+id/ifsc_code_id">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/PBTitleText"
+                    android:layout_below="@+id/ifsc_code_il"
+                    android:id="@+id/file_uploading_tv"
+                    android:text="@string/file_uploading"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/pan_file"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/file_uploading_tv"
+                    android:id="@+id/pan_file_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:id="@+id/pan_file_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--<com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/photo"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/pan_file_il"
+                    android:id="@+id/photo_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:id="@+id/photo_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pan_file_il"
+                            android:id="@+id/photo_il"
+                            android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/buttonChooseImage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Select" />
+
+                                <EditText
+                                    android:id="@+id/editTextImageName"
+                                    android:hint="Name For Image"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <Button
+                                    android:id="@+id/buttonUploadImage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Upload" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerInside"
+                            android:layout_below="@+id/photo_il"/>
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView"
+                            android:id="@+id/adhar_file_pdf_ly"
+                            android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/buttonChoosePDF"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Select" />
+
+                                <EditText
+                                    android:id="@+id/editTextPDFName"
+                                    android:hint="Name For PDF"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <Button
+                                    android:id="@+id/buttonUploadPDF"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Upload" />
+
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fetch Pdf"
+                            android:visibility="gone"
+                            android:layout_below="@+id/adhar_file_pdf_ly"
+                            android:id="@+id/buttonFetchPdf"/>
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:id="@+id/listView"
+                            android:layout_below="@+id/buttonFetchPdf"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content">
+                        </ListView>
+
+                        <ImageView
+                            android:id="@+id/imageViewPdf"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:visibility="gone"
+                            android:layout_below="@+id/listView"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/adhar_file"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/imageViewPdf"
+                    android:id="@+id/adhar_file_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:id="@+id/adhar_file_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:hint="@string/passbook_or_cheque"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:layout_below="@+id/adhar_file_il"
+                    android:id="@+id/passbook_or_cheque_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="text"
+                            android:id="@+id/passbook_or_cheque_id">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/password"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/passbook_or_cheque_il"
+                            android:id="@+id/password_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="textPassword"
+                                    android:id="@+id/password_id">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/PBOutlinedBox"
+                            android:hint="@string/confirm_password"
+                            app:boxStrokeWidth="1dp"
+                            app:boxCornerRadiusTopEnd="40dp"
+                            app:boxCornerRadiusBottomEnd="40dp"
+                            app:boxCornerRadiusBottomStart="40dp"
+                            app:boxCornerRadiusTopStart="40dp"
+                            android:layout_below="@+id/password_il"
+                            android:id="@+id/confirm_password_il">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    style="@style/PBEditBox"
+                                    android:inputType="textPassword"
+                                    android:id="@+id/confirm_password_id">
+
+                                </com.google.android.material.textfield.TextInputEditText>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/confirm_password_il"
+                            android:layout_marginBottom="8dp"
+                            android:id="@+id/lat_long_ly"
+                            android:weightSum="9">
+                                <View style="@style/PB_Dummy_View" />
+
+                                <Button
+                                    style="@style/PB_Button_View"
+                                    android:layout_weight="3"
+                                    android:id="@+id/latitude"/>
+                                <View style="@style/PB_Dummy_View" />
+
+                                <Button
+                                    style="@style/PB_Button_View"
+                                    android:layout_weight="3"
+                                    android:id="@+id/longitude"/>
+                                <View style="@style/PB_Dummy_View" />
+                        </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBoxValid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/generic_terms"
+                    android:layout_below="@+id/lat_long_ly" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:layout_below="@+id/checkBoxValid"
+                    android:padding="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/button_Submit"/>
+
+        </RelativeLayout>
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

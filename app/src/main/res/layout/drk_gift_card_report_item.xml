@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/pay_bizz_orange"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/serial_no_id"
+        style="@style/PBReportTableTV"
+        android:text="@string/serial_no"/>
+    <TextView
+        android:id="@+id/card_amt"
+        style="@style/PBReportTableTV"
+        android:text="@string/card_amt"/>
+    <TextView
+        android:id="@+id/req_for"
+        style="@style/PBReportTableTV"
+        android:text="@string/req_for"/>
+    <TextView
+        android:id="@+id/req_val"
+        style="@style/PBReportTableTV"
+        android:text="@string/req_val"/>
+    <TextView
+        android:id="@+id/req_date"
+        style="@style/PBReportTableTV"
+        android:text="@string/request_date"/>
+    <TextView
+        android:id="@+id/action_date"
+        style="@style/PBReportTableTV"
+        android:text="@string/action_date"/>
+    <TextView
+        android:id="@+id/status"
+        style="@style/PBReportTableTV"
+        android:text="@string/status"/>
+    <TextView
+        android:id="@+id/remark"
+        style="@style/PBReportTableTV"
+        android:text="@string/remark"/>
+</LinearLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        style="@style/PBGenericMPWC"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            style="@style/PBGenericMPWC"
+            android:background="@color/pay_bizz_orange">
+
+            <RelativeLayout
+                android:id="@+id/pay_biz_about"
+                style="@style/PBGenericMPWC"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@color/white"
+                    android:text="@string/about"/>
+
+                <TextView
+                    android:id="@+id/about_desc"
+                    android:layout_below="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="@string/about_us_descr"/>
+
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_below="@+id/about_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/footer_icon_pb"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:text="@string/more"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/more"
+                    android:src="@drawable/about" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/company_details_rl"
+                style="@style/PBGenericMPWC"
+                android:layout_below="@+id/pay_biz_about">
+                <include
+                    layout="@layout/paybiz_company_details"
+                    style="@style/PBGenericMPWC"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/features_views_about_rl"
+                style="@style/PBGenericMPWC"
+                android:layout_margin="16dp"
+                android:layout_below="@+id/company_details_rl">
+
+                <RelativeLayout
+                    android:id="@+id/one_stop_rl"
+                    style="@style/PBGenericMPWC">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL">
+
+                        <TextView
+                            android:id="@+id/one_stop_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/one_stop_str" />
+
+                        <TextView
+                            android:id="@+id/financial_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/one_stop_tv"
+                            android:text="@string/financial_services" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:background="@drawable/about_us_features"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/easy_onboarding_rl"
+                    style="@style/PBGenericMPWC"
+                    android:layout_below="@+id/one_stop_rl">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL">
+
+                        <TextView
+                            android:id="@+id/easy_onboarding_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/easy_onboarding_str" />
+
+                        <TextView
+                            android:id="@+id/easy_onboarding_desc_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/easy_onboarding_tv"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:background="@drawable/about_us_features"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/bussiness_opportunity_rl"
+                    style="@style/PBGenericMPWC"
+                    android:layout_below="@+id/easy_onboarding_rl">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL">
+
+                        <TextView
+                            android:id="@+id/business_opportunity_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/business_opportunity" />
+
+                        <TextView
+                            android:id="@+id/with_minimal_investments_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/business_opportunity_tv"
+                            android:text="@string/with_minimal_investments" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:background="@drawable/about_us_features"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/high_earning_potential_rl"
+                    style="@style/PBGenericMPWC"
+                    android:layout_below="@+id/bussiness_opportunity_rl">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL">
+
+                        <TextView
+                            android:id="@+id/high_earning_potential_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/high_earning_potential" />
+
+                        <TextView
+                            android:id="@+id/high_earning_potential_desc_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/high_earning_potential_tv"
+                            android:text="@string/with_minimal_investments" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:background="@drawable/about_us_features"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_friendly_rl"
+                    style="@style/PBGenericMPWC"
+                    android:layout_below="@+id/high_earning_potential_rl">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL">
+
+                        <TextView
+                            android:id="@+id/user_friendly_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/user_friendly" />
+
+                        <TextView
+                            android:id="@+id/user_friendly_desc_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/user_friendly_tv"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:background="@drawable/about_us_features"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/secure_reliable_rl"
+                    style="@style/PBGenericMPWC"
+                    android:layout_below="@+id/user_friendly_rl">
+
+                    <RelativeLayout
+                        style="@style/PBServiceRL">
+
+                        <TextView
+                            android:id="@+id/secure_reliable_tv"
+                            style="@style/PBServiceTTV"
+                            android:text="@string/secure_reliable_str" />
+
+                        <TextView
+                            android:id="@+id/secure_reliable_desc_tv"
+                            style="@style/PBServiceTV"
+                            android:layout_below="@+id/secure_reliable_tv"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        style="@style/PBServiceImg"
+                        android:background="@drawable/about_us_features"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        <include
+            layout="@layout/footer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/features_views_about_rl" />
+
+    </RelativeLayout>
+</ScrollView></androidx.constraintlayout.widget.ConstraintLayout>

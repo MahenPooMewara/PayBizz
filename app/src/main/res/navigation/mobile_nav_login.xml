@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nav_login"
+    app:startDestination="@+id/nav_payu_gateway">
+
+    <fragment
+        android:id="@+id/login_home"
+        android:name="com.drk.pay_bizz.menus.home.LoginHomeFragment"
+        android:label="@string/dashboard_activity"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_payu_gateway"
+        android:name="com.drk.pay_bizz.menus.master.PayUGatewayFragment"
+        android:label="@string/payu_gateway"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_fund_req"
+        android:name="com.drk.pay_bizz.menus.master.FundReqFragment"
+        android:label="@string/fund_req"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_drk_gift_card"
+        android:name="com.drk.pay_bizz.menus.master.DRKGiftCardFragment"
+        android:label="@string/drk_gift_card"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_aeps_acc_req"
+        android:name="com.drk.pay_bizz.menus.master.AePSAccReqFragment"
+        android:label="@string/aeps_acc_req"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_uti_pan_coupon"
+        android:name="com.drk.pay_bizz.menus.paybizz_services.UTIPANCouponFragment"
+        android:label="@string/uti_pan_coupon"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_pay_lic"
+        android:name="com.drk.pay_bizz.menus.paybizz_services.PayLICFragment"
+        android:label="@string/pay_lic"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_electricity_bill"
+        android:name="com.drk.pay_bizz.menus.paybizz_services.ElectricityBillPayFragment"
+        android:label="@string/electricity_bill"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_money_transfer_new"
+        android:name="com.drk.pay_bizz.menus.paybizz_services.MoneyTransferNewFragment"
+        android:label="@string/money_transfer_new"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_aeps"
+        android:name="com.drk.pay_bizz.menus.paybizz_services.AepsFragment"
+        android:label="@string/aeps"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_income_tax_return"
+        android:name="com.drk.pay_bizz.menus.paybizz_services.ITReturnFragment"
+        android:label="@string/income_tax_return"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_drk_gift_rep"
+        android:name="com.drk.pay_bizz.menus.report.DRKGiftReportFragment"
+        android:label="@string/drk_gift_rep"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_money_transfer_"
+        android:name="com.drk.pay_bizz.menus.report.MoneyTransferReportFragment"
+        android:label="@string/money_transfer_"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_electricity_bill_report"
+        android:name="com.drk.pay_bizz.menus.report.EBillReportFragment"
+        android:label="@string/electricity_bill_report"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_lic_report"
+        android:name="com.drk.pay_bizz.menus.report.LICReportFragment"
+        android:label="@string/lic_report"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_pan_card_report"
+        android:name="com.drk.pay_bizz.menus.report.PANCardReportFragment"
+        android:label="@string/pan_card_report"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_income_tax_report"
+        android:name="com.drk.pay_bizz.menus.report.ITReportFragment"
+        android:label="@string/income_tax_report"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="com.drk.pay_bizz.menus.report.TransactionFragment"
+        android:label="@string/transaction"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_training"
+        android:name="com.drk.pay_bizz.menus.guidelines.TrainingFragment"
+        android:label="@string/training"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.drk.pay_bizz.menus.guidelines.VideoFragment"
+        android:label="@string/video"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_commission_sheet"
+        android:name="com.drk.pay_bizz.menus.guidelines.CommissionSheetFragment"
+        android:label="@string/commission_sheet"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_submit_tkt"
+        android:name="com.drk.pay_bizz.menus.support.SubmitTkTFragment"
+        android:label="@string/submit_tkt"
+        tools:layout="@layout/fragment_gallery" />
+
+
+
+</navigation>

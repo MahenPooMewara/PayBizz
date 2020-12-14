@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    app:cardBackgroundColor="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/pan_center_rl"
+            style="@style/PBGenericMPWC"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp">
+
+            <RelativeLayout
+                style="@style/PBServiceRL"
+                android:layout_width="320dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/service_background_grey">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/PBServiceDescTTV"/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    style="@style/PBServiceDescTV"
+                    android:layout_below="@+id/title"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/img_rv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="bottom"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/pan_circle"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.ScrollView
+        style="@style/PBGenericMPWC"
+        tools:ignore="MissingConstraints">
+
+        <android.widget.RelativeLayout
+            style="@style/PBGenericMPWC"
+            android:background="@color/pay_bizz_orange">
+
+            <android.widget.RelativeLayout
+                android:id="@+id/pay_biz_about"
+                style="@style/PBGenericMPWC"
+                android:background="@color/pay_bizz_footer_black"
+                android:padding="16dp">
+
+                <android.widget.TextView
+                    android:id="@+id/new_offer"
+                    style="@style/PBHomeFragmentTitleScroll"/>
+
+                <android.widget.TextView
+                    android:id="@+id/welcome_str_tv"
+                    android:layout_below="@+id/new_offer"
+                    style="@style/PBHFTVCenterHorizontal"
+                    android:textSize="24dp"/>
+
+                <android.widget.TextView
+                    android:id="@+id/paybizz_portal_tv"
+                    android:layout_below="@+id/welcome_str_tv"
+                    style="@style/PBHFTVCenterHorizontal"
+                    android:text="@string/paybizz_portal_str"/>
+
+                <android.widget.TextView
+                    android:id="@+id/become_biz_tv"
+                    android:layout_below="@+id/paybizz_portal_tv"
+                    style="@style/PBHFTVCenterHorizontal"
+                    android:text="@string/become_biz_str"/>
+
+                <android.widget.RelativeLayout
+                    android:id="@+id/call_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/become_biz_tv"
+                    android:padding="16dp"
+                    android:background="@drawable/about_us_features">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/PBOutlinedBox"
+                        app:boxStrokeWidth="1dp"
+                        app:boxCornerRadiusTopEnd="40dp"
+                        app:boxCornerRadiusBottomEnd="40dp"
+                        app:boxCornerRadiusBottomStart="40dp"
+                        app:boxCornerRadiusTopStart="40dp"
+                        android:id="@+id/email_id_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email_id"
+                            style="@style/PBEditBox"
+                            android:hint="@string/please_email_address"
+                            android:inputType="textEmailAddress">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/PBOutlinedBox"
+                        android:hint="@string/mobile_no"
+                        app:boxStrokeWidth="1dp"
+                        app:boxCornerRadiusTopEnd="40dp"
+                        app:boxCornerRadiusBottomEnd="40dp"
+                        app:boxCornerRadiusBottomStart="40dp"
+                        app:boxCornerRadiusTopStart="40dp"
+                        android:layout_below="@+id/email_id_il"
+                        android:id="@+id/mob_no_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:id="@+id/mob_no">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/PBOutlinedBox"
+                        android:hint="@string/name"
+                        app:boxStrokeWidth="1dp"
+                        app:boxCornerRadiusTopEnd="40dp"
+                        app:boxCornerRadiusBottomEnd="40dp"
+                        app:boxCornerRadiusBottomStart="40dp"
+                        app:boxCornerRadiusTopStart="40dp"
+                        android:layout_below="@+id/mob_no_il"
+                        android:id="@+id/username_il">
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/PBEditBox"
+                            android:inputType="textCapCharacters|textPersonName"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:id="@+id/username">
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <android.widget.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="@string/join_now"
+                        android:layout_below="@+id/username_il"
+                        android:gravity="center"
+                        android:layout_marginBottom="24dp"
+                        android:textSize="24dp"
+                        android:background="@drawable/footer_icon_pb"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:id="@+id/join_now"/>
+
+                </android.widget.RelativeLayout>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/service_rl"
+                android:layout_below="@+id/pay_biz_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:background="@color/pay_bizz_orange">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/service_list"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/why_choose_ly"
+                android:layout_below="@+id/service_rl"
+                android:layout_width="match_parent"
+                android:background="@color/pb_features_bg"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/pay_bizz_green" />
+
+                <android.widget.TextView
+                    android:id="@+id/why_choose_paybiz_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/pb_features_bg"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/why_choose_paybiz"/>
+            </android.widget.RelativeLayout>
+
+        <android.widget.RelativeLayout
+            android:id="@+id/why_choose_details_ly"
+            style="@style/PBGenericMPWC"
+            android:background="@color/pb_features_bg"
+            android:layout_below="@+id/why_choose_ly">
+
+            <android.widget.TextView
+                android:id="@+id/save_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+                android:textSize="24dp"
+                android:textColor="@color/pay_bizz_footer_disc"
+                android:text="@string/save_money"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pb_features_why_choose"
+                android:layout_below="@+id/save_money_tv"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="wrap_content"/>
+
+        </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/work_ly"
+                android:layout_below="@+id/why_choose_details_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:background="@color/pay_bizz_green" />
+
+                <android.widget.TextView
+                    android:id="@+id/work_paybiz_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/pay_bizz_orange"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/how_it_works"/>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/work_details_ly"
+                style="@style/PBGenericMPWC"
+                android:visibility="gone"
+                android:layout_below="@+id/work_ly">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pb_work_rv"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/our_partners_ly"
+                android:layout_below="@+id/work_details_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pay_bizz_orange"
+                android:padding="16dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/pay_bizz_green" />
+
+                <android.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/pay_bizz_orange"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/our_partners"/>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/our_partners_details_ly"
+                style="@style/PBGenericMPWC"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@color/pay_bizz_orange"
+                android:layout_below="@+id/our_partners_ly">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pb_our_partner_rv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/agent_say_ly"
+                android:layout_below="@+id/our_partners_details_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pb_features_bg"
+                android:padding="@dimen/activity_horizontal_margin" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/pay_bizz_green" />
+
+                <android.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/pb_features_bg"
+                    android:paddingStart="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/agent_say"/>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/agent_say_details_ly"
+                style="@style/PBGenericMPWC"
+                android:background="@color/pb_features_bg"
+                android:layout_below="@+id/agent_say_ly">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pb_agent_say_rv"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/company_details_rl"
+                style="@style/PBGenericMPWC"
+                android:layout_below="@+id/agent_say_details_ly">
+                <include
+                    layout="@layout/paybiz_company_details"
+                    style="@style/PBGenericMPWC"/>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/subcribe_to_news_letter_ly"
+                style="@style/PBGenericMPWC"
+                android:background="@color/pb_features_bg"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/company_details_rl">
+
+                <android.widget.TextView
+                    android:id="@+id/subcribe_nl_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="@string/subcribe_nl"/>
+
+                <android.widget.TextView
+                    android:id="@+id/subcribe_desc_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/pay_bizz_footer_disc"
+                    android:layout_below="@+id/subcribe_nl_tv"
+                    android:textSize="24dp"
+                    android:text="@string/receive_new_ad"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/PBOutlinedBox"
+                    android:layout_below="@+id/subcribe_desc_tv"
+                    app:boxStrokeWidth="1dp"
+                    app:boxCornerRadiusTopEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="40dp"
+                    app:boxCornerRadiusBottomStart="40dp"
+                    app:boxCornerRadiusTopStart="40dp"
+                    android:id="@+id/subscribe_email_id_il">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/subcribe_email_id"
+                        style="@style/PBEditBox"
+                        android:hint="@string/enter_your_email"
+                        android:inputType="textEmailAddress">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <android.widget.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="@string/subcribe"
+                    android:layout_below="@+id/subscribe_email_id_il"
+                    android:gravity="center"
+                    android:layout_marginBottom="24dp"
+                    android:textSize="24dp"
+                    android:background="@drawable/footer_icon_pb"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/subcribe_now"/>
+
+                <android.widget.ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@android:drawable/ic_menu_call"
+                    app:tint="@android:color/holo_green_dark"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"/>
+
+            </android.widget.RelativeLayout>
+
+            <include
+                layout="@layout/footer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subcribe_to_news_letter_ly" />
+
+        </android.widget.RelativeLayout>
+    </android.widget.ScrollView></androidx.constraintlayout.widget.ConstraintLayout>
