@@ -1,4 +1,4 @@
-package com.drk.pay_bizz.holders;
+package com.drk.pay_bizz.holders.menus.main;
 
 import android.app.Activity;
 import android.view.View;
@@ -13,47 +13,47 @@ import com.drk.pay_bizz.util.FontManager;
 /**
  * Created by Mahendra Mewara.
  */
-public class ServicesItemHolder extends RecyclerView.ViewHolder {
-    private ImageView service_icon_image;
+public class WorkItemHolder extends RecyclerView.ViewHolder {
+    private ImageView work_item_icon_image;
     private TextView title;
 
     private View container;
 
     /**
-     * Constructor of ServicesItemHolder
+     * Constructor of WorkItemHolder
      * @param itemView
      * @param activity
      */
-    public ServicesItemHolder(View itemView, Activity activity) {
+    public WorkItemHolder(View itemView, Activity activity) {
         super(itemView);
         container = itemView;
         FontManager fontManager = FontManager.getInstance(activity.getBaseContext());
 
-        service_icon_image = (ImageView) itemView.findViewById(R.id.service_icon_iv);
+        work_item_icon_image = (ImageView) itemView.findViewById(R.id.work_item_iv);
 
-        title = (TextView) itemView.findViewById(R.id.service_name_tv);
+        title = (TextView) itemView.findViewById(R.id.work_item_tv);
         title.setTypeface(fontManager.getMediumFont());
 
     }
 
     /**
-     * getFeatureImage of ServicesItemHolder
+     * getFeatureImage of WorkItemHolder
      * @return
      */
     public ImageView getFeatureImage() {
-        return service_icon_image;
+        return work_item_icon_image;
     }
 
     /**
-     * setFeatureImage of ServicesItemHolder
+     * setFeatureImage of WorkItemHolder
      * @param feature_image
      */
     public void setFeatureImage(ImageView feature_image) {
-        this.service_icon_image = feature_image;
+        this.work_item_icon_image = feature_image;
     }
 
     /**
-     * getTitle of ServicesItemHolder
+     * getTitle of WorkItemHolder
      * @return
      */
     public TextView getTitle() {
@@ -61,7 +61,7 @@ public class ServicesItemHolder extends RecyclerView.ViewHolder {
     }
 
     /**
-     * setTitle of ServicesItemHolder
+     * setTitle of WorkItemHolder
      * @param title
      */
     public void setTitle(TextView title) {
@@ -69,7 +69,7 @@ public class ServicesItemHolder extends RecyclerView.ViewHolder {
     }
 
     /**
-     *  getContainer of ServicesItemHolder
+     *  getContainer of WorkItemHolder
      * @return
      */
     public View getContainer() {
@@ -77,7 +77,7 @@ public class ServicesItemHolder extends RecyclerView.ViewHolder {
     }
 
     /**
-     *  setContainer of ServicesItemHolder
+     *  setContainer of WorkItemHolder
      * @param container
      */
     public void setContainer(View container) {

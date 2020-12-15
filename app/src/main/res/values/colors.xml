@@ -13,6 +13,7 @@
     <color name="pb_services_grey">#FFf1f1f1</color>
     <color name="pay_bizz_green">#FF28a745</color>
     <color name="pay_bizz_orange">#f15a1a</color>
+    <color name="pay_bizz_orange_end">#fab091</color>
     <color name="pb_features_bg">#FFf8f8f8</color>
 
     <!-- Home Screen -->

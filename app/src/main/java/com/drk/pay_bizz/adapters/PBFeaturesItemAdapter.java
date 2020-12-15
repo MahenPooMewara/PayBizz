@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.drk.pay_bizz.util.ArrayListConstants;
 import com.drk.pay_bizz.R;
-import com.drk.pay_bizz.holders.PBFeaturesItemHolder;
+import com.drk.pay_bizz.holders.menus.main.PBFeaturesItemHolder;
 import com.drk.pay_bizz.modals.PBFeaturesModal;
 import com.drk.pay_bizz.util.AppConstants;
 

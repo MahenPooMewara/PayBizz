@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.drk.pay_bizz.util.ArrayListConstants;
 import com.drk.pay_bizz.R;
-import com.drk.pay_bizz.holders.FAQItemHolder;
+import com.drk.pay_bizz.holders.menus.main.FAQItemHolder;
 import com.drk.pay_bizz.modals.FAQItemModal;
 import com.drk.pay_bizz.util.AppConstants;
 import com.drk.pay_bizz.util.FontManager;

@@ -11,7 +11,7 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.drk.pay_bizz.R;
-import com.drk.pay_bizz.holders.PartnerItemHolder;
+import com.drk.pay_bizz.holders.menus.main.PartnerItemHolder;
 import com.drk.pay_bizz.modals.OurPartnersModal;
 import com.drk.pay_bizz.util.AppConstants;
 

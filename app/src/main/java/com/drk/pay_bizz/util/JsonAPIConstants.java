@@ -489,17 +489,16 @@ public class JsonAPIConstants {
     /**
      * Response Json for WBReq
      * {
-     *     "Res" : 0
+     *     "RES" : 0
      *     "WBal" : "Wallet Balance * Optional"
      * }
      */
-    public static final String Res = "Res";
     public static final String WBal = "WBal";
 
     /**
      * Response Json for PrReq
      * {
-     *     "Res" : 0,
+     *     "RES" : 0,
      *     "Afor" :  "Apply for String ",
      *     "UName" :  "MAHENDRA MEWARA  Name string type",
      *     "DId" : "Drk id DRK002565"

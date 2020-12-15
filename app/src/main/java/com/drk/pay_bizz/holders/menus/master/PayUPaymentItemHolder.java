@@ -1,4 +1,4 @@
-package com.drk.pay_bizz.holders.menus;
+package com.drk.pay_bizz.holders.menus.master;
 
 import android.app.Activity;
 import android.view.View;
